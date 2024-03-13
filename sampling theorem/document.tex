@@ -1,0 +1,85 @@
+\documentclass{IEEEtran}
+\usepackage{amsmath}
+\begin{document}
+	\newcommand{\authorID}[2]{#1{\space #2}}
+	
+	\title{Sampling Theorem Derivation}
+	
+	\author{\authorID{Hatem Mohamed Ahmed Rashed}{20010447}}
+	
+	\maketitle
+	
+	\begin{abstract}
+		
+		The sampling theorem, also known as the Nyquist-Shannon sampling theorem, is a fundamental concept in signal processing and digital communication. It establishes the conditions under which a continuous-time signal can be accurately represented by a discrete sequence of samples. This abstract provides an overview of the sampling theorem, its significance in digital signal processing, and its practical applications in various fields.
+	\end{abstract}
+	
+	\section{Introduction}
+	
+		The sampling theorem, formulated by Claude Shannon in 1949, is a crucial principle that governs the conversion of continuous-time signals into discrete-time signals. In essence, the theorem defines the minimum sampling rate required to accurately reconstruct a continuous signal from its samples without losing information. This concept is essential in digital signal processing, telecommunications, audio processing, and various other fields where analog signals need to be converted into digital form for processing, storage, and transmission.
+		
+		The Nyquist-Shannon sampling theorem states that to faithfully reconstruct a continuous signal, the sampling frequency must be at least twice the highest frequency component present in the signal. This critical sampling rate ensures that no information is lost during the analog-to-digital conversion process. Violating the Nyquist criterion can lead to aliasing, where high-frequency components are erroneously folded back into the reconstructed signal, causing distortion and loss of fidelity.
+		
+		In practical applications, adherence to the sampling theorem is crucial for maintaining signal integrity and avoiding artifacts in digital systems. Engineers and researchers rely on the sampling theorem to design efficient analog-to-digital converters, audio codecs, image sensors, and communication systems that accurately capture and process signals within the constraints of the Nyquist rate.
+		
+		This introduction sets the stage for a detailed exploration of the Nyquist-Shannon sampling theorem, its mathematical formulation, practical implications, and real-world applications in modern technology.
+	
+	\section{Methodology}
+	\subsection{Main Concept}
+		The main concept of the sampling theorem, also known as the Nyquist-Shannon sampling theorem, is that it establishes a relationship between the continuous-time signal and its discrete-time representation. The theorem states that in order to accurately reconstruct a continuous-time signal from its samples, the sampling frequency must be at least twice the highest frequency component present in the signal. 
+		
+		In simpler terms, the sampling theorem states that to avoid aliasing (distortion) and accurately capture the information contained in a continuous signal, the sampling rate must be sufficient to capture all the important details of the signal. If the sampling rate is too low, information can be lost, leading to distortion and artifacts in the reconstructed signal. 
+		
+		By following the sampling theorem guidelines, we can ensure that the original continuous signal can be accurately represented and reconstructed from its discrete samples without any loss of information.
+		
+	\subsection{Derivation and Prove}
+	Mathematically, the sampling theorem can be stated as:
+		
+	If a continuous signal $ x(t) $ contains no frequencies higher than $ B $ Hz, then $ x(t) $ can be completely reconstructed from its samples taken at a rate of at least $ 2B $ samples per second.
+		
+	Consider a continuous signal x(t) with bandwidth B. The Fourier transform of this signal is given by:
+		
+	\begin{equation}
+		 X(f) = \int x(t) * {e ^ {-j2 \pi}} ft dt
+	\end{equation}
+		
+	where :
+	\begin{align*}
+		X(f) & : \text{the frequency domain representation of the signal $ x(t) $.}
+	\end{align*}
+		
+		
+	 Let's assume that we sample the signal $ x(t) $ at a rate of $ 2B $ samples per second, i.e., the sampling interval is : 
+	 
+	 \begin{equation}
+	 	 {T_s} = \frac{1}{2 B}.
+	  \end{equation}
+	 
+	 The sampled signal \(x_s(t)\) can be represented as:
+	\begin{equation}
+	 	x_s(t) = \sum [x(n T_s) * \gamma(t - n T_s)]
+	\end{equation}
+	
+	where :
+	\begin{align*}
+		x(nT_s) & : \text{the value of the continuous signal \(x(t)\) at the sampling instances \(n T_s\).}
+	\end{align*}
+	
+	The Fourier transform of the sampled signal \(X_s(f)\) is given by:
+	\begin{equation}
+		X_s(f) = \frac{1} {T_s} * \sum [X(f - nF_s)]
+	\end{equation}
+	
+	\subsection{Analize and Explanation}
+	
+	Now, let's analyze the frequency domain representation of the sampled signal. Since the original signal $ x(t) $ has bandwidth $ B $, its Fourier transform $ X(f) $ will be non-zero only in the range $ [-B, B] $. Therefore, the Fourier transform of the sampled signal $ X_s(f) $ will contain copies of $ X(f) $ centered at multiples of the sampling frequency $ F_s $.
+	
+	To reconstruct the original signal $ x(t) $ from its samples, we need to ensure that these copies of $ X(f) $ do not overlap. This condition can be satisfied by ensuring that $ F_s > 2B $.
+	
+	Therefore, the sampling theorem is proven: If a continuous signal $ x(t) $ contains no frequencies higher than $ B$  Hz, then $ x(t) $ can be completely reconstructed from its samples taken at a rate of at least $ 2B $ samples per second.
+	
+	\section{Conclusion}
+	n conclusion, the sampling theorem is a fundamental concept in signal processing and plays a crucial role in the design and implementation of digital systems for capturing and processing analog signals. It provides a clear criterion for determining the minimum sampling rate required to faithfully represent a continuous signal in the digital domain.
+	
+	
+\end{document}
