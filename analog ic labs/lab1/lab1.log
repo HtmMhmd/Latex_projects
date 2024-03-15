@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.20)  13 MAR 2024 10:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.20)  15 MAR 2024 14:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -65,11 +65,23 @@ Package caption Info: Standard document class detected.
 \c@caption@flags=\count193
 \c@continuedfloat=\count194
 )
+(C:\Miktex\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count195
+\float@exts=\toks18
+\float@box=\box51
+\@float@everytoks=\toks19
+\@floatcapt=\box52
+)
 (C:\Miktex\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count195
-\l__pdf_internal_box=\box51
-) (lab1.aux)
+\l__color_backend_stack_int=\count196
+\l__pdf_internal_box=\box53
+) (lab1.aux
+
+LaTeX Warning: Label `fig:out2' multiply defined.
+
+)
 \openout1 = `lab1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
@@ -86,20 +98,19 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
 LaTeX Font Info:    ... okay on input line 6.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
 LaTeX Font Info:    ... okay on input line 6.
-
-(C:\Miktex\tex/context/base/mkii\supp-pdf.mkii
+ (C:\Miktex\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count196
+\scratchcounter=\count197
 \scratchdimen=\dimen151
-\scratchbox=\box52
-\nofMPsegments=\count197
-\nofMParguments=\count198
-\everyMPshowfont=\toks18
-\MPscratchCnt=\count199
+\scratchbox=\box54
+\nofMPsegments=\count198
+\nofMParguments=\count199
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count266
 \MPscratchDim=\dimen152
-\MPnumerator=\count266
-\makeMPintoPDFobject=\count267
-\everyMPtoPDFconversion=\toks19
+\MPnumerator=\count267
+\makeMPintoPDFobject=\count268
+\everyMPtoPDFconversion=\toks21
 ) (C:\Miktex\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -109,6 +120,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 11.
@@ -119,41 +131,166 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 <unity_gain.jpg, id=1, 1284.8pt x 642.4pt>
 File: unity_gain.jpg Graphic file (type jpg)
 <use unity_gain.jpg>
-Package pdftex.def Info: unity_gain.jpg  used on input line 19.
-(pdftex.def)             Requested size: 341.5519pt x 170.7743pt.
+Package pdftex.def Info: unity_gain.jpg  used on input line 21.
+(pdftex.def)             Requested size: 345.0pt x 172.4995pt.
 <gain_2.jpg, id=2, 1284.8pt x 642.4pt>
 File: gain_2.jpg Graphic file (type jpg)
 <use gain_2.jpg>
-Package pdftex.def Info: gain_2.jpg  used on input line 26.
-(pdftex.def)             Requested size: 341.5519pt x 170.7743pt.
-<gain2_4.jpg, id=3, 1284.8pt x 690.58pt>
-File: gain2_4.jpg Graphic file (type jpg)
-<use gain2_4.jpg>
-Package pdftex.def Info: gain2_4.jpg  used on input line 33.
-(pdftex.def)             Requested size: 341.5519pt x 183.58238pt.
+Package pdftex.def Info: gain_2.jpg  used on input line 29.
+(pdftex.def)             Requested size: 345.0pt x 172.4995pt.
  [1
 
 {C:/Users/LENOVO/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./unity_gai
-n.jpg>] [2 <./gain_2.jpg> <./gain2_4.jpg>] (lab1.aux)
+n.jpg>]
+<gain2_4.jpg, id=10, 1284.8pt x 690.58pt>
+File: gain2_4.jpg Graphic file (type jpg)
+<use gain2_4.jpg>
+Package pdftex.def Info: gain2_4.jpg  used on input line 39.
+(pdftex.def)             Requested size: 345.0pt x 185.43697pt.
+<Unity/UnitySineGain.png, id=11, 551.05875pt x 446.66875pt>
+File: Unity/UnitySineGain.png Graphic file (type png)
+<use Unity/UnitySineGain.png>
+Package pdftex.def Info: Unity/UnitySineGain.png  used on input line 59.
+(pdftex.def)             Requested size: 345.0pt x 279.65799pt.
+ [2 <./gain_2.jpg> <./gain2_4.jpg>]
+<Unity/UnitySineFreq.png, id=16, 676.5275pt x 469.755pt>
+File: Unity/UnitySineFreq.png Graphic file (type png)
+<use Unity/UnitySineFreq.png>
+Package pdftex.def Info: Unity/UnitySineFreq.png  used on input line 67.
+(pdftex.def)             Requested size: 345.0pt x 239.55754pt.
+ [3 <./Unity/UnitySineGain.png>]
+<Unity/UnitySquareGain.png, id=22, 551.05875pt x 409.53pt>
+File: Unity/UnitySquareGain.png Graphic file (type png)
+<use Unity/UnitySquareGain.png>
+Package pdftex.def Info: Unity/UnitySquareGain.png  used on input line 77.
+(pdftex.def)             Requested size: 345.0pt x 256.40553pt.
+ [4 <./Unity/UnitySineFreq.png>]
+<Unity/UnitySquareFreq.png, id=27, 690.58pt x 467.7475pt>
+File: Unity/UnitySquareFreq.png Graphic file (type png)
+<use Unity/UnitySquareFreq.png>
+Package pdftex.def Info: Unity/UnitySquareFreq.png  used on input line 86.
+(pdftex.def)             Requested size: 345.0pt x 233.68045pt.
+
+[5 <./Unity/UnitySquareGain.png>]
+<Non Inverting/circuit.png, id=32, 685.56125pt x 444.66125pt>
+File: Non Inverting/circuit.png Graphic file (type png)
+<use Non Inverting/circuit.png>
+Package pdftex.def Info: Non Inverting/circuit.png  used on input line 104.
+(pdftex.def)             Requested size: 345.0pt x 223.77527pt.
+ [6 <./Unity/UnitySquareFreq.png>]
+<Non Inverting/sine_gain.png, id=37, 547.04375pt x 444.66125pt>
+File: Non Inverting/sine_gain.png Graphic file (type png)
+<use Non Inverting/sine_gain.png>
+Package pdftex.def Info: Non Inverting/sine_gain.png  used on input line 113.
+(pdftex.def)             Requested size: 345.0pt x 280.4366pt.
+ [7 <./Non Inverting/circuit.png>]
+<Non Inverting/Sine.png, id=43, 685.56125pt x 444.66125pt>
+File: Non Inverting/Sine.png Graphic file (type png)
+<use Non Inverting/Sine.png>
+Package pdftex.def Info: Non Inverting/Sine.png  used on input line 122.
+(pdftex.def)             Requested size: 345.0pt x 223.77527pt.
+ [8 <./Non Inverting/sine_gain.png>]
+<Non Inverting/square_gain.png, id=48, 547.04375pt x 444.66125pt>
+File: Non Inverting/square_gain.png Graphic file (type png)
+<use Non Inverting/square_gain.png>
+Package pdftex.def Info: Non Inverting/square_gain.png  used on input line 133.
+
+(pdftex.def)             Requested size: 345.0pt x 280.4366pt.
+ [9 <./Non Inverting/Sine.png>]
+<Non Inverting/Rec.png, id=53, 685.56125pt x 444.66125pt>
+File: Non Inverting/Rec.png Graphic file (type png)
+<use Non Inverting/Rec.png>
+Package pdftex.def Info: Non Inverting/Rec.png  used on input line 143.
+(pdftex.def)             Requested size: 345.0pt x 223.77527pt.
+ [10 <./Non Inverting/square_gain.png>]
+<Inverting/circuit.png, id=58, 719.68875pt x 444.66125pt>
+File: Inverting/circuit.png Graphic file (type png)
+<use Inverting/circuit.png>
+Package pdftex.def Info: Inverting/circuit.png  used on input line 160.
+(pdftex.def)             Requested size: 345.0pt x 213.16357pt.
+ [11 <./Non Inverting/Rec.png>]
+<Inverting/sine_gain.png, id=63, 550.055pt x 444.66125pt>
+File: Inverting/sine_gain.png Graphic file (type png)
+<use Inverting/sine_gain.png>
+Package pdftex.def Info: Inverting/sine_gain.png  used on input line 169.
+(pdftex.def)             Requested size: 345.0pt x 278.9032pt.
+ [12 <./Inverting/circuit.png>]
+<Inverting/Sine.png, id=68, 684.5575pt x 444.66125pt>
+File: Inverting/Sine.png Graphic file (type png)
+<use Inverting/Sine.png>
+Package pdftex.def Info: Inverting/Sine.png  used on input line 178.
+(pdftex.def)             Requested size: 345.0pt x 224.10095pt.
+ [13 <./Inverting/sine_gain.png>]
+<Inverting/square_gain.png, id=74, 557.08125pt x 444.66125pt>
+File: Inverting/square_gain.png Graphic file (type png)
+<use Inverting/square_gain.png>
+Package pdftex.def Info: Inverting/square_gain.png  used on input line 189.
+(pdftex.def)             Requested size: 345.0pt x 275.38179pt.
+ [14 <./Inverting/Sine.png>]
+<Inverting/Square.png, id=79, 684.5575pt x 444.66125pt>
+File: Inverting/Square.png Graphic file (type png)
+<use Inverting/Square.png>
+Package pdftex.def Info: Inverting/Square.png  used on input line 199.
+(pdftex.def)             Requested size: 345.0pt x 224.10095pt.
+ [15 <./Inverting/square_gain.png>]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 219.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 219.
+<instrumentation1/sine_circuit.png, id=84, 548.0475pt x 392.46625pt>
+File: instrumentation1/sine_circuit.png Graphic file (type png)
+<use instrumentation1/sine_circuit.png>
+Package pdftex.def Info: instrumentation1/sine_circuit.png  used on input line 
+236.
+(pdftex.def)             Requested size: 345.0pt x 247.0634pt.
+ [16 <./Inverting/Square.png>]
+<instrumentation1/out.png, id=94, 548.0475pt x 453.695pt>
+File: instrumentation1/out.png Graphic file (type png)
+<use instrumentation1/out.png>
+Package pdftex.def Info: instrumentation1/out.png  used on input line 249.
+(pdftex.def)             Requested size: 345.0pt x 285.60783pt.
+[17 <./instrumentation1/sine_circuit.png>]
+<instrumentation2/sine_circuit.png, id=99, 548.0475pt x 289.08pt>
+File: instrumentation2/sine_circuit.png Graphic file (type png)
+<use instrumentation2/sine_circuit.png>
+Package pdftex.def Info: instrumentation2/sine_circuit.png  used on input line 
+282.
+(pdftex.def)             Requested size: 345.0pt x 181.9802pt.
+ [18 <./instrumentation1/out.png>]
+<instrumentation2/out.png, id=104, 548.0475pt x 441.65pt>
+File: instrumentation2/out.png Graphic file (type png)
+<use instrumentation2/out.png>
+Package pdftex.def Info: instrumentation2/out.png  used on input line 295.
+(pdftex.def)             Requested size: 345.0pt x 278.02531pt.
+
+[19 <./instrumentation2/sine_circuit.png>] [20 <./instrumentation2/out.png>]
+(lab1.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 2674 strings out of 475248
- 46934 string characters out of 5774224
- 1920785 words of memory out of 5000000
- 24230 multiletter control sequences out of 15000+600000
- 562016 words of font info for 49 fonts, out of 8000000 for 9000
+ 2898 strings out of 475248
+ 52775 string characters out of 5774224
+ 1921785 words of memory out of 5000000
+ 24449 multiletter control sequences out of 15000+600000
+ 562631 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,6n,65p,220b,297s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Miktex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Miktex/fonts/type1/p
-ublic/amsfonts/cm/cmr10.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmr12.pfb
->
-Output written on lab1.pdf (2 pages, 477358 bytes).
+ 57i,7n,65p,256b,297s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Miktex/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Miktex/fonts/type1/p
+ublic/amsfonts/cm/cmbx12.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmex10.p
+fb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Miktex/fonts/type1/
+public/amsfonts/cm/cmmi7.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmr10.pf
+b><C:/Miktex/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Miktex/fonts/type1/pu
+blic/amsfonts/cm/cmr7.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on lab1.pdf (20 pages, 1010649 bytes).
 PDF statistics:
- 27 PDF objects out of 1000 (max. 8388607)
+ 152 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 106 words of extra memory for PDF output out of 10000 (max. 10000000)
 
