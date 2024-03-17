@@ -1,9 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.20)  16 MAR 2024 05:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.20)  17 MAR 2024 06:23
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
-**"./hatem mohamed ahmed 20010447.tex"
-(hatem mohamed ahmed 20010447.tex
+**"c:/Users/LENOVO/Desktop/Latex_projects/sheet os 5/sheet 5.tex"
+(c:/Users/LENOVO/Desktop/Latex_projects/sheet os 5/sheet 5.tex
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
 (C:\Miktex\tex/latex/base\article.cls
@@ -31,30 +32,23 @@ File: size12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
 \bibindent=\dimen140
-)
-(C:\Miktex\tex/latex/lastpage\lastpage.sty
+) (C:\Miktex\tex/latex/lastpage\lastpage.sty
 Package: lastpage 2023/10/14 v2.0e lastpage: 2.09 or 2e? (HMM)
-
-(C:\Miktex\tex/latex/lastpage\lastpage2e.sty
-Package: lastpage2e 2023/10/14 v2.0e Decide which 2e lastpage version to use (H
-MM)
-
-(C:\Miktex\tex/latex/lastpage\lastpagemodern.sty
+ (C:\Miktex\tex/latex/lastpage\lastpage2e.sty
+Package: lastpage2e 2023/10/14 v2.0e Decide which 2e lastpage version to use (HMM)
+ (C:\Miktex\tex/latex/lastpage\lastpagemodern.sty
 Package: lastpagemodern 2023-10-14 v2.0e Refers to last page's name (HMM; JPG)
 \c@lastpagecount=\count193
 ) 
 )) (C:\Miktex\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
-
-(C:\Miktex\tex/latex/graphics-cfg\color.cfg
+ (C:\Miktex\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 227.
-
-(C:\Miktex\tex/latex/graphics-def\pdftex.def
+ (C:\Miktex\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
-)
-(C:\Miktex\tex/latex/graphics\mathcolor.ltx)
+) (C:\Miktex\tex/latex/graphics\mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
 Package xcolor Info: Model `RGB' extended on input line 1369.
@@ -64,25 +58,21 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
-)
-(C:\Miktex\tex/latex/amsmath\amsmath.sty
+) (C:\Miktex\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2023/05/13 v2.17o AMS math features
 \@mathmargin=\skip51
 
 For additional information on amsmath, use the `?' option.
 (C:\Miktex\tex/latex/amsmath\amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
-
-(C:\Miktex\tex/latex/amsmath\amsgen.sty
+ (C:\Miktex\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks17
 \ex@=\dimen141
-))
-(C:\Miktex\tex/latex/amsmath\amsbsy.sty
+)) (C:\Miktex\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen142
-)
-(C:\Miktex\tex/latex/amsmath\amsopn.sty
+) (C:\Miktex\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
 \inf@bad=\count194
@@ -132,10 +122,8 @@ LaTeX Info: Redefining \Relbar on input line 971.
 \mathdisplay@stack=\toks21
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
-)
-(C:\Miktex\tex/latex/fancyhdr\fancyhdr.sty
+) (C:\Miktex\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
-
 \f@nch@headwidth=\skip54
 \f@nch@O@elh=\skip55
 \f@nch@O@erh=\skip56
@@ -145,8 +133,7 @@ Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 \f@nch@O@erf=\skip60
 \f@nch@O@olf=\skip61
 \f@nch@O@orf=\skip62
-)
-(C:\Miktex\tex/latex/enumitem\enumitem.sty
+) (C:\Miktex\tex/latex/enumitem\enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \enitkv@toks@=\toks22
 \labelindent=\skip63
@@ -155,29 +142,23 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \enit@inbox=\box53
 \enit@count@id=\count272
 \enitdp@description=\count273
-)
-(C:\Miktex\tex/latex/graphics\graphicx.sty
+) (C:\Miktex\tex/latex/graphics\graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
-
-(C:\Miktex\tex/latex/graphics\keyval.sty
+ (C:\Miktex\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks24
-)
-(C:\Miktex\tex/latex/graphics\graphics.sty
+) (C:\Miktex\tex/latex/graphics\graphics.sty
 Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
-
-(C:\Miktex\tex/latex/graphics\trig.sty
+ (C:\Miktex\tex/latex/graphics\trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
-)
-(C:\Miktex\tex/latex/graphics-cfg\graphics.cfg
+) (C:\Miktex\tex/latex/graphics-cfg\graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
 )
 \Gin@req@height=\dimen151
 \Gin@req@width=\dimen152
-)
-(C:\Miktex\tex/latex/tools\tabularx.sty
+) (C:\Miktex\tex/latex/tools\tabularx.sty
 Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
  (C:\Miktex\tex/latex/tools\array.sty
 Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
@@ -196,11 +177,9 @@ Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
 \TX@delta=\dimen159
 \TX@cols=\count274
 \TX@ftn=\toks26
-)
-(C:\Miktex\tex/latex/caption\caption.sty
+) (C:\Miktex\tex/latex/caption\caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
-
-(C:\Miktex\tex/latex/caption\caption3.sty
+ (C:\Miktex\tex/latex/caption\caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
 \caption@tempdima=\dimen160
 \captionmargin=\dimen161
@@ -214,67 +193,48 @@ Package caption Info: Standard document class detected.
 )
 \c@caption@flags=\count275
 \c@continuedfloat=\count276
-)
-(C:\Miktex\tex/latex/environ\environ.sty
+) (C:\Miktex\tex/latex/environ\environ.sty
 Package: environ 2014/05/04 v0.3 A new way to define environments
-
-(C:\Miktex\tex/latex/trimspaces\trimspaces.sty
+ (C:\Miktex\tex/latex/trimspaces\trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
-))
-(C:\Miktex\tex/latex/mdframed\mdframed.sty
+)) (C:\Miktex\tex/latex/mdframed\mdframed.sty
 Package: mdframed 2013/07/01 1.9b: mdframed
-
-(C:\Miktex\tex/latex/kvoptions\kvoptions.sty
+ (C:\Miktex\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
-
-(C:\Miktex\tex/generic/ltxcmds\ltxcmds.sty
+ (C:\Miktex\tex/generic/ltxcmds\ltxcmds.sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
-)
-(C:\Miktex\tex/latex/kvsetkeys\kvsetkeys.sty
+) (C:\Miktex\tex/latex/kvsetkeys\kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-))
-(C:\Miktex\tex/latex/l3packages/xparse\xparse.sty
-(C:\Miktex\tex/latex/l3kernel\expl3.sty
+)) (C:\Miktex\tex/latex/l3packages/xparse\xparse.sty (C:\Miktex\tex/latex/l3kernel\expl3.sty
 Package: expl3 2023-08-29 L3 programming layer (loader) 
-
-(C:\Miktex\tex/latex/l3backend\l3backend-pdftex.def
+ (C:\Miktex\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count277
 \l__pdf_internal_box=\box56
 ))
 Package: xparse 2023-08-29 L3 Experimental document command parser
-)
-(C:\Miktex\tex/latex/etoolbox\etoolbox.sty
+) (C:\Miktex\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count278
-)
-(C:\Miktex\tex/latex/zref\zref-abspage.sty
+) (C:\Miktex\tex/latex/zref\zref-abspage.sty
 Package: zref-abspage 2023-09-14 v2.35 Module abspage for zref (HO)
-
-(C:\Miktex\tex/latex/zref\zref-base.sty
+ (C:\Miktex\tex/latex/zref\zref-base.sty
 Package: zref-base 2023-09-14 v2.35 Module base for zref (HO)
-
-(C:\Miktex\tex/generic/infwarerr\infwarerr.sty
+ (C:\Miktex\tex/generic/infwarerr\infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-)
-(C:\Miktex\tex/generic/kvdefinekeys\kvdefinekeys.sty
+) (C:\Miktex\tex/generic/kvdefinekeys\kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-)
-(C:\Miktex\tex/generic/pdftexcmds\pdftexcmds.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
-)
-
-(C:\Miktex\tex/generic/iftex\iftex.sty
+) (C:\Miktex\tex/generic/pdftexcmds\pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+ (C:\Miktex\tex/generic/iftex\iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-)
-(C:\Miktex\tex/generic/etexcmds\etexcmds.sty
+) (C:\Miktex\tex/generic/etexcmds\etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
-)
-(C:\Miktex\tex/latex/auxhook\auxhook.sty
+) (C:\Miktex\tex/latex/auxhook\auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
 Package zref Info: New property list: main on input line 767.
@@ -283,8 +243,7 @@ Package zref Info: New property: page on input line 769.
 )
 \c@abspage=\count279
 Package zref Info: New property: abspage on input line 67.
-)
-(C:\Miktex\tex/latex/needspace\needspace.sty
+) (C:\Miktex\tex/latex/needspace\needspace.sty
 Package: needspace 2010/09/12 v1.3d reserve vertical space
 )
 \mdf@templength=\skip66
@@ -328,8 +287,7 @@ Package: needspace 2010/09/12 v1.3d reserve vertical space
 \mdf@subsubtitlebelowskip@length=\skip103
 \mdf@subsubtitleinneraboveskip@length=\skip104
 \mdf@subsubtitleinnerbelowskip@length=\skip105
-
-(C:\Miktex\tex/latex/mdframed\md-frame-0.mdf
+ (C:\Miktex\tex/latex/mdframed\md-frame-0.mdf
 File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 )
 \mdf@frametitlebox=\box57
@@ -375,147 +333,145 @@ File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 \c@mdf@env@ii=\count284
 \c@mdf@zref@counter=\count285
 Package zref Info: New property: mdf@pagevalue on input line 895.
-)
-\c@question=\count286
-\c@answer_box=\count287
+) (C:\Miktex\tex/latex/base\inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks27
+\inpenc@posthook=\toks28
+) (C:\Miktex\tex/latex/listings\listings.sty
+\lst@mode=\count286
+\lst@gtempboxa=\box62
+\lst@token=\toks29
+\lst@length=\count287
+\lst@currlwidth=\dimen168
+\lst@column=\count288
+\lst@pos=\count289
+\lst@lostspace=\dimen169
+\lst@width=\dimen170
+\lst@newlines=\count290
+\lst@lineno=\count291
+\lst@maxwidth=\dimen171
+ (C:\Miktex\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
+\c@lstnumber=\count292
+\lst@skipnumbers=\count293
+\lst@framebox=\box63
+) (C:\Miktex\tex/latex/listings\listings.cfg
+File: listings.cfg 2023/02/27 1.9 listings configuration
+))
+Package: listings 2023/02/27 1.9 (Carsten Heinz)
+\c@question=\count294
+\c@answer_box=\count295
+ (sheet 5.aux)
+\openout1 = `"sheet 5.aux"'.
 
-(hatem mohamed ahmed 20010447.aux
-
-LaTeX Warning: Label `fig:terminal output' multiply defined.
-
-
-LaTeX Warning: Label `fig:terminal output' multiply defined.
-
-)
-\openout1 = `"hatem mohamed ahmed 20010447.aux"'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
  (C:\Miktex\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count288
-\scratchdimen=\dimen168
-\scratchbox=\box62
-\nofMPsegments=\count289
-\nofMParguments=\count290
-\everyMPshowfont=\toks27
-\MPscratchCnt=\count291
-\MPscratchDim=\dimen169
-\MPnumerator=\count292
-\makeMPintoPDFobject=\count293
-\everyMPtoPDFconversion=\toks28
+\scratchcounter=\count296
+\scratchdimen=\dimen172
+\scratchbox=\box64
+\nofMPsegments=\count297
+\nofMParguments=\count298
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count299
+\MPscratchDim=\dimen173
+\MPnumerator=\count300
+\makeMPintoPDFobject=\count301
+\everyMPtoPDFconversion=\toks31
 ) (C:\Miktex\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
-
-(C:\Miktex\tex/latex/00miktex\epstopdf-sys.cfg
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (C:\Miktex\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count302
 
-
-Package mdframed Warning: You have not loaded ntheorem yet on input line 129.
-
-
-Package mdframed Warning: You have not loaded ntheorem yet on input line 137.
-
-
-Package mdframed Warning: You have not loaded ntheorem yet on input line 163.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[1{C:/Users/LENOVO/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
-
-]
-
-Package mdframed Warning: You have not loaded ntheorem yet on input line 174.
-
-
-Package mdframed Warning: You have not loaded ntheorem yet on input line 185.
-
-
-Package mdframed Warning: You have not loaded ntheorem yet on input line 196.
-
-Package mdframed Info: Not enough space on this page on input line 196.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[2]
-Package mdframed Info: Not enough space on this page on input line 196.
-
-
-Package mdframed Warning: You have not loaded ntheorem yet on input line 207.
-
-
-Package mdframed Warning: You have not loaded ntheorem yet on input line 229.
-
-
-Package mdframed Warning: You have not loaded ntheorem yet on input line 239.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[3]
-
-Package mdframed Warning: You have not loaded ntheorem yet on input line 268.
-
-
-Package mdframed Warning: You have not loaded ntheorem yet on input line 286.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[4]
-
-Package mdframed Warning: You have not loaded ntheorem yet on input line 311.
-
-
-Overfull \hbox (7.88399pt too wide) in paragraph at lines 327--340
-[]\OT1/cmr/m/n/12 Discuss this point in both user/kernel threads and uni/multip
-rocessors.                 
+Overfull \hbox (43.07156pt too wide) in paragraph at lines 120--120
+[]\OT1/cmr/bx/n/17.28 5.1 MU-TUAL EX-CLU-SION: SOFT-WARE AP-PROACHES 
  []
 
 
-Package mdframed Warning: You have not loaded ntheorem yet on input line 340.
+Package mdframed Warning: You have not loaded ntheorem yet on input line 127.
 
 
-Overfull \hbox (11.10732pt too wide) in paragraph at lines 347--347
-[]\OT1/cmr/bx/n/17.28 WINDOWS PRO-CESS AND THREAD MAN-AGE-
+Package mdframed Warning: You have not loaded ntheorem yet on input line 133.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--142
+
+ []
+
+
+Package mdframed Warning: You have not loaded ntheorem yet on input line 142.
+
+
+Package mdframed Warning: You have not loaded ntheorem yet on input line 152.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[1
+
+{C:/Users/LENOVO/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+
+Package mdframed Warning: You have not loaded ntheorem yet on input line 173.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--173
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--173
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--173
+
+ []
+
+
+Overfull \hbox (7.77165pt too wide) in paragraph at lines 176--176
+[]\OT1/cmr/bx/n/17.28 5.3 MU-TUAL EX-CLU-SION: HARD-WARE SUP-PORT 
+ []
+
+
+Package mdframed Warning: You have not loaded ntheorem yet on input line 199.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--199
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--199
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--199
+
  []
 
 
@@ -523,140 +479,134 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[5]
+[2] (C:\Miktex\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2023/02/27 1.9 listings language file
+) (C:\Miktex\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
+) (semaphore1.c
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 1.
+ (C:\Miktex\tex/latex/base\omscmr.fd
+File: omscmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1.
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 8.
+ (C:\Miktex\tex/latex/base\omlcmr.fd
+File: omlcmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 8.
+)
 
-Package mdframed Warning: You have not loaded ntheorem yet on input line 374.
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[3] (semaphore2.c
+Overfull \hbox (4.17987pt too wide) in paragraph at lines 13--14
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+)
+
+Package mdframed Warning: You have not loaded ntheorem yet on input line 222.
 
 
-Package mdframed Warning: You have not loaded ntheorem yet on input line 405.
+Underfull \hbox (badness 10000) in paragraph at lines 222--222
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 222--222
+
+ []
+
+
+Overfull \hbox (3.63608pt too wide) in paragraph at lines 222--222
+[]\OT1/cmr/bx/n/12 The main dif-fer-ence be-tween both is that the neg-a-tive value semaphore
+ []
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
+[4] (concurrent_program.c)
+
+Package mdframed Warning: You have not loaded ntheorem yet on input line 237.
+
+
+Package mdframed Warning: You have not loaded ntheorem yet on input line 243.
+
+
+Package mdframed Warning: You got a bad break
+(mdframed)                because the last box will be empty
+(mdframed)                you have to change it manually
+(mdframed)                by changing the text, the space
+(mdframed)                or something else on input line 243.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[5] (mutual_exclusion.c)
+
+Package mdframed Warning: You have not loaded ntheorem yet on input line 263.
+
+
+Overfull \hbox (11.34654pt too wide) in paragraph at lines 263--263
+[]\OT1/cmr/m/n/12 - If pro-cess P(1) starts first and con-tinue ex-e-cut-ing to the part where $\OML/cmm/m/it/12 while\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 turn\OT1/cmr/m/n/12 ! =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--263
+
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [6]
-Package mdframed Info: Not enough space on this page on input line 405.
-
-Underfull \hbox (badness 10000) in paragraph at lines 409--419
-
- []
-
-
-Package mdframed Warning: You have not loaded ntheorem yet on input line 419.
-
-
-Package mdframed Warning: You have not loaded ntheorem yet on input line 449.
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[7]
-
-Package mdframed Warning: You have not loaded ntheorem yet on input line 464.
-
-
-Package mdframed Warning: You have not loaded ntheorem yet on input line 479.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[8]
-
-Package mdframed Warning: You have not loaded ntheorem yet on input line 507.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 507--507
-
- []
-
-<output.png, id=35, 420.3705pt x 84.315pt>
-File: output.png Graphic file (type png)
-<use output.png>
-Package pdftex.def Info: output.png  used on input line 512.
-(pdftex.def)             Requested size: 409.71689pt x 82.18297pt.
-<output3.png, id=37, 473.3685pt x 269.20575pt>
-File: output3.png Graphic file (type png)
-<use output3.png>
-Package pdftex.def Info: output3.png  used on input line 522.
-(pdftex.def)             Requested size: 409.71689pt x 233.01585pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 519--526
-
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<output2.png, id=38, 466.74374pt x 85.5195pt>
-File: output2.png Graphic file (type png)
-<use output2.png>
-Package pdftex.def Info: output2.png  used on input line 530.
-(pdftex.def)             Requested size: 409.71689pt x 75.07338pt.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[9 <./output.png>]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[10 <./output3.png> <./output2.png>]
-
+[7] 
 enddocument/afterlastpage: lastpage setting LastPage.
-(hatem mohamed ahmed 20010447.aux)
+(sheet 5.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
-
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
- 6532 strings out of 475248
- 109041 string characters out of 5774224
- 1933785 words of memory out of 5000000
- 27956 multiletter control sequences out of 15000+600000
- 564524 words of font info for 58 fonts, out of 8000000 for 9000
+ 8393 strings out of 475248
+ 133873 string characters out of 5774224
+ 1946785 words of memory out of 5000000
+ 29778 multiletter control sequences out of 15000+600000
+ 564879 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,11n,93p,528b,574s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Miktex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Miktex/fonts/type1/p
-ublic/amsfonts/cm/cmbxti10.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmmi12
-.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Miktex/fonts/type1
-/public/amsfonts/cm/cmr12.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmr17.p
-fb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Miktex/fonts/type1/
-public/amsfonts/cm/cmsy10.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmtt12.
-pfb>
-Output written on "hatem mohamed ahmed 20010447.pdf" (10 pages, 182802 bytes).
+ 84i,11n,93p,544b,1560s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\LENOVO\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1200.pk> <C:\Users\LENOVO\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Miktex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on "sheet 5.pdf" (7 pages, 128053 bytes).
 PDF statistics:
- 87 PDF objects out of 1000 (max. 8388607)
+ 76 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

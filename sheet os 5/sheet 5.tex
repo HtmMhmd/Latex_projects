@@ -1,0 +1,267 @@
+% Set document class and packages
+\documentclass[a4paper,12pt,fleqn]{article}
+\usepackage{lastpage}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage[skip=2pt,font=small]{caption}
+\usepackage{environ}
+\usepackage{mdframed}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+
+% Booleans to show answers and to ask students to return the question form
+\newif\ifshowanswers
+
+% ==============================================================================
+% Question command
+%
+\newcounter{question}
+\newcommand*\question{%
+\stepcounter{question}%
+\paragraph{Question \thequestion}}
+
+% ==============================================================================
+% Answer boxes
+%
+\mdtheorem[outerlinewidth=2,roundcorner=10pt,
+leftmargin=0,rightmargin=0,
+backgroundcolor=yellow!40,outerlinecolor=blue!70!black,
+innertopmargin=\topskip,splittopskip=\topskip,
+ntheorem=true,]{answer_box}{Answer}[section]
+
+\NewEnviron{answer}{
+\ifshowanswers
+\begin{answer_box*}
+	\BODY
+\end{answer_box*}
+\fi}
+
+% ==============================================================================
+% Show answers?
+%
+\showanswerstrue
+% \showanswersfalse
+
+
+% ==============================================================================
+%
+% Course information
+%
+% ==============================================================================
+
+\newcommand{\coursename}{Operating Systems}
+\newcommand{\coursecode}{CSEx61}
+
+\newcommand{\assigntype}{Homework Assignment \#5 \\ \textbf{Concurrency: Mutual Exclusion and Synchronization}}
+\newcommand{\teacher}{Hatem Mohamed Ahmed (\texttt{20010447})}
+
+
+
+% ==============================================================================
+%
+% Margins, header and footer
+%
+% ==============================================================================
+\setlength{\topmargin}{0cm}
+\setlength{\textheight}{9.25in}
+\setlength{\oddsidemargin}{0.0in}
+\setlength{\evensidemargin}{0.0in}
+\setlength{\textwidth}{16cm}
+\pagestyle{fancy}
+\cfoot{\footnotesize{Page \thepage \
+	-- \coursename \ (\coursecode)}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\begin{document}
+
+% ==============================================================================
+%
+% Header
+%
+% ==============================================================================
+
+\noindent\makebox[\linewidth]{\rule{\textwidth}{0.4pt}}
+
+\begin{center}
+	\Large \textbf{\coursename} (\coursecode)
+\end{center}
+
+\begin{center}
+	\large \assigntype{} \\
+	\vspace{3mm}
+\end{center}
+
+\begin{center}
+	\teacher\\
+	
+\end{center}
+
+\noindent\makebox[\linewidth]{\rule{\textwidth}{0.4pt}}
+
+
+% ==============================================================================
+%
+% Questions
+%
+% ==============================================================================
+
+% --------------------------------------------------------------------------------
+
+% ==========================begin Question===================================
+
+% Set document content
+
+\section*{5.1 MUTUAL EXCLUSION: SOFTWARE APPROACHES}
+\question \textbf{Define the followings:}
+\begin{enumerate}
+	\item \textbf{Mutual exclusion}:
+	\begin{answer}
+		- Mutual exclusion is a property of concurrent systems where only one process at a time is allowed to access a shared resource or section of code. \\
+		- This prevents concurrent access that could lead to data corruption or inconsistency.
+	\end{answer}
+	
+	\item \textbf{Critical section}:
+	\begin{answer}
+		- A critical section is a part of a program that accesses shared resources and must be executed under mutual exclusion. \\
+		- Only one process or thread can execute the critical section at a time to avoid conflicts and maintain data integrity.
+	\end{answer}
+\end{enumerate}
+
+\question \textbf{True or false:}
+\begin{enumerate}
+	\item \textbf{Peterson’s algorithm can not be generalized to the case of processes}
+	\begin{answer}
+		\textbf{True.} \\
+		Peterson's algorithm is typically used for thread synchronization in the context of shared memory systems and is not directly applicable to the general case of inter-process synchronization.
+	\end{answer}
+\end{enumerate}
+
+\section*{5.2 PRINCIPLES OF CONCURRENCY}
+\question \textbf{Define the followings:}
+\begin{enumerate}
+	\item \textbf{Race condition}:
+	\begin{answer}
+		- A race condition occurs in a concurrent system when the behavior of the system depends on the relative timing or interleaving of operations by multiple executing threads or processes.\\
+		- This can lead to unexpected and erroneous behavior of the system.
+	\end{answer}
+	\end{enumerate}
+\question \textbf{What are the requirements for mutual exclusion}:
+	\begin{enumerate}
+		\item
+	\begin{answer}
+
+			\item \textbf{a) Exclusive access: }
+			
+			Only one process at a time can access the shared resource.\\
+			
+			\item \textbf{b) No deadlock: }
+			
+			Processes cannot be indefinitely blocked waiting for access to the resource.\\
+			
+			\item \textbf{c) No starvation: }
+			
+			Every process that requests access to the resource eventually gets it.\\
+			
+			
+			\item \textbf{d) Progress: }If no process is in the critical section and some processes wish to enter their critical sections, then only those processes that are not executing in their remainder section can participate in decisions regarding which will enter its critical section next, and this decision cannot be postponed indefinitely.
+	\end{answer}
+\end{enumerate}
+
+\section*{5.3 MUTUAL EXCLUSION: HARDWARE SUPPORT}
+
+\question \textbf{Machine-instruction approach that enforces mutual exclusion has a number of disadvantages.}
+
+\begin{enumerate}
+\item \textbf{mention them:}
+\begin{answer}
+\item \textbf {a) Lack of flexibility:}
+
+		 Hardware-based mutual exclusion solutions are often fixed and may not be easily changed or adapted to different synchronization requirements.\\
+
+\item \textbf {b) Complexity:}
+
+		 Hardware-based solutions for mutual exclusion can be complex and may require specialized hardware support, leading to increased system complexity and potentially higher costs.\\
+
+\item \textbf {c) Limited scalability:}
+
+	 Hardware-based approaches may not scale well to support a large number of concurrent processes or threads, leading to potential performance limitations in highly concurrent systems.\\
+
+\item \textbf {d) Lack of portability:}
+
+		 Hardware-based mutual exclusion solutions may not be portable across different hardware architectures, limiting their applicability in heterogeneous systems.
+
+\end{answer}
+\end{enumerate}
+
+\question \textbf{Comparison of Semaphore Definitions:}Note one difference: With the preceding
+definition, a semaphore can never take on a negative value. Is there any difference in the effect of the two sets of definitions when used in programs? \\That is, could you substitute one set for the other without altering the meaning of the program?
+
+\begin{enumerate}
+\item \lstinputlisting[language=C, caption={Semaphore Program 1}, label={lst:Semaphore_proram1}]{semaphore1.c}
+
+
+\item \lstinputlisting[language=C, caption={Semaphore Program 2}, label={lst:Semaphore_program2}]{semaphore2.c}
+
+\begin{answer}
+
+
+\item \textbf{- The First :}\\
+- Semaphore count can take negative value resulting in blocking the running process after calling \texttt{semWait} and places the process in the queue.\\
+- But when calling \texttt{semSignal} the blocked processes that are waiting to be unblocked are unblocked and places in the ready list to execute their critical section next .\\
+
+\item \textbf{- The Second :}\\
+- The same as before but semaphore count cannot take a negative value .\\
+
+\item \textbf {The main difference between both is that the negative value semaphore count take can be indecation to the number of the waiting processes in the waiting queue but both have the same functionality and can be replaced by the other.}
+\end{answer}
+\end{enumerate}
+  
+\section*{General Questions}
+\subsection*{7. Consider the following program:}
+
+\lstinputlisting[language=C, caption={Concurrent Program}, label={lst:concurrent_program}]{concurrent_program.c}
+\begin{enumerate}
+	\item \textbf{ Determine the proper lower bound and upper bound on the final value of the shared variable tally output by this concurrent program.\\
+ 	Assume processes can execute at any relative speed and that a value can only be incremented after it has been loaded into a register by a separate machine instruction.}
+ 	\begin{answer}
+	-In case of parallel process execution.\\
+ 	- The lower bound on the final value of tally would be 50.\\
+ 	- The upper bound on the final value of tally in this case would be 100, as each process can increment tally up to 50 times.\\ 
+ 	But, if the processes execute truly in parallel, both processes could read the current value of tally at the same time, increment their respective local copies, and then write back the same value to tally, causing one or more of the increments to be lost.
+ 	\end{answer}
+ 	
+	\item \textbf{ Suppose that an arbitrary number of these processes are permitted to execute in parallel under the assumptions of part (a).\\
+ 	What effect will this modification have on the range of final values of tally?}
+	\begin{answer}
+	- It can increase the upper bound on the final value of tally. But this will cause more of the increments to be lost.
+ 	\end{answer}
+\end{enumerate}
+\subsection*{8. Consider the following program:}
+\question
+
+\lstinputlisting[language=C, caption={Mutual Exclusion Program}, label={lst:mutual_exclusion_program}]{mutual_exclusion.c}
+
+\begin{enumerate}
+	\item \textbf {This software solution to the mutual exclusion problem for two processes is proposed, Find a counterexample that demonstrates that this solution is incorrect.}
+\begin{answer}
+	\textbf{Counterexample:}
+	
+	- If process P(1) starts first and continue executing to the part where $while (turn != id)$ is $false$ as $turn$ is initialized by zero so it will stuck in the $while (turn != id)$ loop .\\
+	- Then the process P(0) starts execution making $ (blocked[0]) $ is $false$ .
+	- Parallely the condition $ (blocked[1-id]) $ is $false$ which exits the nested loop in process P(1) executing $turn = 1 $ which makes the condition $while (turn != id)$ set to $false$ in the first loop as $id = turn = 1$.\\
+	
+	- Then the process P(1) reaches the line of the code where it enters the critical section. \\
+	- Parallely the process P(0) also reaches the line of the code where it enters the critical section.\\
+	- Both Processes now can acess critical section making the code not correct to use.
+	
+\end{answer}
+
+
+\end{enumerate}
+\end{document}

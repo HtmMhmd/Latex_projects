@@ -1,0 +1,19 @@
+{
+  "configurations": [
+    {
+      "name": "windows-clang-x64",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "C:\\MinGW\\bin"
+      ],
+      "compilerPath": "C:/MinGW/bin",
+      "cStandard": "gnu17",
+      "cppStandard": "${default}",
+      "intelliSenseMode": "windows-clang-x64",
+      "compilerArgs": [
+        ""
+      ]
+    }
+  ],
+  "version": 4
+}
