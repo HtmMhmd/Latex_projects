@@ -151,7 +151,6 @@ INPUT C:\Miktex\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Miktex\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Miktex\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Miktex\fonts\tfm\public\cm\cmbx12.tfm
-INPUT C:\Miktex\fonts\tfm\public\cm\cmbx10.tfm
 INPUT .\3d_task_figure2\input_images.png
 INPUT .\3d_task_figure2\input_images.png
 INPUT .\3d_task_figure2\input_images.png
@@ -181,28 +180,29 @@ INPUT .\3d_task_figure2\output2.png
 INPUT .\3d_task_figure2\output2.png
 INPUT .\3d_task_figure2\output2.png
 INPUT .\3d_task_figure2\output2.png
-INPUT .\3d_task_figure1\reference.png
-INPUT .\3d_task_figure1\reference.png
-INPUT .\3d_task_figure1\reference.png
-INPUT .\3d_task_figure1\reference.png
-INPUT .\3d_task_figure1\reference.png
-INPUT .\3d_task_figure1\reference.png
-INPUT .\3d_task_figure1\reference.png
-INPUT .\3d_task_figure1\distance to be measured.png
-INPUT .\3d_task_figure1\distance to be measured.png
-INPUT .\3d_task_figure1\distance to be measured.png
-INPUT .\3d_task_figure1\distance to be measured.png
-INPUT .\3d_task_figure1\distance to be measured.png
-INPUT .\3d_task_figure1\distance to be measured.png
-INPUT .\3d_task_figure1\distance to be measured.png
-INPUT .\3d_task_figure1\measurement_output.jpg
-INPUT .\3d_task_figure1\measurement_output.jpg
-INPUT .\3d_task_figure1\measurement_output.jpg
-INPUT .\3d_task_figure1\measurement_output.jpg
-INPUT .\3d_task_figure1\measurement_output.jpg
-INPUT .\3d_task_figure1\measurement_output.jpg
-INPUT .\3d_task_figure1\measurement_output.jpg
+INPUT C:\Miktex\fonts\tfm\public\cm\cmbx10.tfm
 INPUT C:\Users\LENOVO\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
+INPUT .\3d_task_figure1\reference.png
+INPUT .\3d_task_figure1\reference.png
+INPUT .\3d_task_figure1\reference.png
+INPUT .\3d_task_figure1\reference.png
+INPUT .\3d_task_figure1\reference.png
+INPUT .\3d_task_figure1\reference.png
+INPUT .\3d_task_figure1\reference.png
+INPUT .\3d_task_figure1\distance to be measured.png
+INPUT .\3d_task_figure1\distance to be measured.png
+INPUT .\3d_task_figure1\distance to be measured.png
+INPUT .\3d_task_figure1\distance to be measured.png
+INPUT .\3d_task_figure1\distance to be measured.png
+INPUT .\3d_task_figure1\distance to be measured.png
+INPUT .\3d_task_figure1\distance to be measured.png
+INPUT .\3d_task_figure1\measurement_output.jpg
+INPUT .\3d_task_figure1\measurement_output.jpg
+INPUT .\3d_task_figure1\measurement_output.jpg
+INPUT .\3d_task_figure1\measurement_output.jpg
+INPUT .\3d_task_figure1\measurement_output.jpg
+INPUT .\3d_task_figure1\measurement_output.jpg
+INPUT .\3d_task_figure1\measurement_output.jpg
 INPUT 3d.aux
 INPUT C:\Miktex\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT C:\Miktex\fonts\type1\public\amsfonts\cm\cmbx10.pfb

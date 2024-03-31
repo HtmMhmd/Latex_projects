@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1711822625.37908 "c:/Users/LENOVO/Desktop/Latex_projects/3d_task_figures/3d.tex" "3d.pdf" "3d" 1711822626.854 0
-  "3d.aux" 1711822626 426 82ac036c9e54eaf5c87279f1156f3e43 "pdflatex"
-  "3d.tex" 1711822624 3615 05fdfdd0bd31791d42f52dd82fc41fd1 ""
+["pdflatex"] 1711843852.58889 "c:/Users/LENOVO/Desktop/Latex_projects/3d_task_figures/3d.tex" "3d.pdf" "3d" 1711843854.52398 0
+  "3d.aux" 1711843854 426 82ac036c9e54eaf5c87279f1156f3e43 "pdflatex"
+  "3d.tex" 1711843851 4272 fc083c81c70be4ca68140c54571589c8 ""
   "3d_task_figure1/distance to be measured.png" 1710861208 255942 03e47084b00d198c978b8f7a02d1190b ""
   "3d_task_figure1/measurement_output.jpg" 1711822406 106223 f9dc4f6182769f12f9b481a110116fd1 ""
   "3d_task_figure1/reference.png" 1710861172 87351 68279da8babd745dfe09587b2b7c5958 ""
@@ -96,9 +96,9 @@
   "C:/Miktex/tex/latex/pgf/utilities/pgfkeys.sty" 1673775190 274 5ae372b7df79135d240456a1c6f2cf9a ""
   "C:/Miktex/tex/latex/pgf/utilities/pgfrcs.sty" 1673775190 325 f9f16d12354225b7dd52a3321f085955 ""
   "C:/Miktex/tex/latex/xcolor/xcolor.sty" 1656236890 56148 51a9a8571c07b9921892ae11063ae853 ""
-  "C:/Users/LENOVO/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1711586440 93231 332cd84f541e6713db2a057686ef9d18 ""
+  "C:/Users/LENOVO/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1711830444 93231 332cd84f541e6713db2a057686ef9d18 ""
   "C:/Users/LENOVO/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1703086494 24125497 8b1ad87af11d0ba301acb91b7ed6b1fa ""
-  "c:/Users/LENOVO/Desktop/Latex_projects/3d_task_figures/3d.tex" 1711822624 3615 05fdfdd0bd31791d42f52dd82fc41fd1 ""
+  "c:/Users/LENOVO/Desktop/Latex_projects/3d_task_figures/3d.tex" 1711843851 4272 fc083c81c70be4ca68140c54571589c8 ""
   (generated)
   "3d.aux"
   "3d.log"

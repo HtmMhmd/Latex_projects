@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.20)  30 MAR 2024 20:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.20)  31 MAR 2024 02:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -311,60 +311,57 @@ Package caption Info: End \AtBeginDocument code.
 <3d_task_figure2/input_images.png, id=4, 221.32687pt x 260.47313pt>
 File: 3d_task_figure2/input_images.png Graphic file (type png)
 <use 3d_task_figure2/input_images.png>
-Package pdftex.def Info: 3d_task_figure2/input_images.png  used on input line 20.
+Package pdftex.def Info: 3d_task_figure2/input_images.png  used on input line 19.
 (pdftex.def)             Requested size: 103.50105pt x 121.8103pt.
 <3d_task_figure2/dense.png, id=6, 164.5785pt x 167.535pt>
 File: 3d_task_figure2/dense.png Graphic file (type png)
 <use 3d_task_figure2/dense.png>
-Package pdftex.def Info: 3d_task_figure2/dense.png  used on input line 24.
+Package pdftex.def Info: 3d_task_figure2/dense.png  used on input line 23.
 (pdftex.def)             Requested size: 86.25pt x 87.80124pt.
 <3d_task_figure2/output1.png, id=7, 148.1535pt x 113.9895pt>
 File: 3d_task_figure2/output1.png Graphic file (type png)
 <use 3d_task_figure2/output1.png>
-Package pdftex.def Info: 3d_task_figure2/output1.png  used on input line 28.
+Package pdftex.def Info: 3d_task_figure2/output1.png  used on input line 27.
 (pdftex.def)             Requested size: 93.15147pt x 71.67287pt.
 <3d_task_figure2/output2.png, id=8, 150.453pt x 121.8735pt>
 File: 3d_task_figure2/output2.png Graphic file (type png)
 <use 3d_task_figure2/output2.png>
-Package pdftex.def Info: 3d_task_figure2/output2.png  used on input line 32.
+Package pdftex.def Info: 3d_task_figure2/output2.png  used on input line 31.
 (pdftex.def)             Requested size: 93.15147pt x 75.46036pt.
-<3d_task_figure1/reference.png, id=9, 599.23875pt x 341.275pt>
+ [1
+
+{C:/Users/LENOVO/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./3d_task_figure2/input_images.png> <./3d_task_figure2/dense.png> <./3d_task_figure2/output1.png> <./3d_task_figure2/output2.png>]
+<3d_task_figure1/reference.png, id=19, 599.23875pt x 341.275pt>
 File: 3d_task_figure1/reference.png Graphic file (type png)
 <use 3d_task_figure1/reference.png>
-Package pdftex.def Info: 3d_task_figure1/reference.png  used on input line 56.
+Package pdftex.def Info: 3d_task_figure1/reference.png  used on input line 51.
 (pdftex.def)             Requested size: 86.25pt x 49.11647pt.
-<3d_task_figure1/distance to be measured.png, id=10, 931.48pt x 626.34pt>
+<3d_task_figure1/distance to be measured.png, id=20, 931.48pt x 626.34pt>
 File: 3d_task_figure1/distance to be measured.png Graphic file (type png)
 <use 3d_task_figure1/distance to be measured.png>
-Package pdftex.def Info: 3d_task_figure1/distance to be measured.png  used on input line 60.
+Package pdftex.def Info: 3d_task_figure1/distance to be measured.png  used on input line 55.
 (pdftex.def)             Requested size: 86.25pt x 57.99287pt.
-<3d_task_figure1/measurement_output.jpg, id=11, 849.1725pt x 852.18375pt>
+<3d_task_figure1/measurement_output.jpg, id=21, 849.1725pt x 852.18375pt>
 File: 3d_task_figure1/measurement_output.jpg Graphic file (type jpg)
 <use 3d_task_figure1/measurement_output.jpg>
-Package pdftex.def Info: 3d_task_figure1/measurement_output.jpg  used on input line 64.
+Package pdftex.def Info: 3d_task_figure1/measurement_output.jpg  used on input line 59.
 (pdftex.def)             Requested size: 110.40253pt x 110.78777pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[1
-
-{C:/Users/LENOVO/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./3d_task_figure2/input_images.png> <./3d_task_figure2/dense.png> <./3d_task_figure2/output1.png> <./3d_task_figure2/output2.png>] [2 <./3d_task_figure1/reference.png> <./3d_task_figure1/distance to be measured.png> <./3d_task_figure1/measurement_output.jpg>] (3d.aux)
+ [2 <./3d_task_figure1/reference.png> <./3d_task_figure1/distance to be measured.png> <./3d_task_figure1/measurement_output.jpg>] (3d.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 13657 strings out of 475248
- 279093 string characters out of 5774224
+ 13659 strings out of 475248
+ 279120 string characters out of 5774224
  1926785 words of memory out of 5000000
- 34999 multiletter control sequences out of 15000+600000
+ 35001 multiletter control sequences out of 15000+600000
  559587 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,8n,89p,438b,725s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,9n,89p,940b,743s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Miktex/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on 3d.pdf (2 pages, 1225152 bytes).
+Output written on 3d.pdf (2 pages, 1226481 bytes).
 PDF statistics:
  41 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
