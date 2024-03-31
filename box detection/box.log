@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.20)  31 MAR 2024 01:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.20)  31 MAR 2024 02:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -371,38 +371,34 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 <images/motion.jpg, id=4, 508.299pt x 549.7338pt>
 File: images/motion.jpg Graphic file (type jpg)
 <use images/motion.jpg>
-Package pdftex.def Info: images/motion.jpg  used on input line 85.
+Package pdftex.def Info: images/motion.jpg  used on input line 83.
 (pdftex.def)             Requested size: 241.49895pt x 261.18498pt.
-
-Overfull \hbox (5.40215pt too wide) in paragraph at lines 79--89
-\OT1/cmr/m/n/10 Co-or-di-nates node which al-lo-cates the ROI in the frame in terms of $(\OML/cmm/m/it/10 X[]; Y[]; X[]; Y[]\OT1/cmr/m/n/10 )$
- []
-
 <images/inputjpg.jpg, id=5, 421.575pt x 318.18875pt>
 File: images/inputjpg.jpg Graphic file (type jpg)
 <use images/inputjpg.jpg>
-Package pdftex.def Info: images/inputjpg.jpg  used on input line 97.
+Package pdftex.def Info: images/inputjpg.jpg  used on input line 95.
 (pdftex.def)             Requested size: 68.99895pt x 52.07648pt.
 <images/color_thre.jpg, id=6, 420.57124pt x 317.185pt>
 File: images/color_thre.jpg Graphic file (type jpg)
 <use images/color_thre.jpg>
-Package pdftex.def Info: images/color_thre.jpg  used on input line 101.
+Package pdftex.def Info: images/color_thre.jpg  used on input line 99.
 (pdftex.def)             Requested size: 68.99895pt x 52.03802pt.
 <images/thre.jpg, id=7, 421.575pt x 318.18875pt>
 File: images/thre.jpg Graphic file (type jpg)
 <use images/thre.jpg>
-Package pdftex.def Info: images/thre.jpg  used on input line 105.
+Package pdftex.def Info: images/thre.jpg  used on input line 103.
 (pdftex.def)             Requested size: 68.99895pt x 52.07648pt.
 <images/bbox.jpg, id=8, 252.945pt x 190.91325pt>
 File: images/bbox.jpg Graphic file (type jpg)
 <use images/bbox.jpg>
-Package pdftex.def Info: images/bbox.jpg  used on input line 109.
+Package pdftex.def Info: images/bbox.jpg  used on input line 107.
 (pdftex.def)             Requested size: 68.99895pt x 52.07744pt.
 <images/decision.jpg, id=9, 642.4pt x 481.8pt>
 File: images/decision.jpg Graphic file (type jpg)
 <use images/decision.jpg>
-Package pdftex.def Info: images/decision.jpg  used on input line 122.
+Package pdftex.def Info: images/decision.jpg  used on input line 120.
 (pdftex.def)             Requested size: 86.25pt x 64.6873pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -421,11 +417,11 @@ Here is how much of TeX's memory you used:
  36438 multiletter control sequences out of 15000+600000
  559587 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,13n,89p,461b,1344s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Miktex/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmr7.pfb>
-Output written on box.pdf (3 pages, 186463 bytes).
+ 84i,13n,89p,527b,1344s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Miktex/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on box.pdf (3 pages, 177892 bytes).
 PDF statistics:
- 46 PDF objects out of 1000 (max. 8388607)
+ 41 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  43 words of extra memory for PDF output out of 10000 (max. 10000000)
 

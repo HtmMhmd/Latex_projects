@@ -10,9 +10,8 @@
 
 \section{Autonomous Landing System}
 \textbf{Draven} software enables it to land to specsifiied spot autonomously through the utilization of advanced image processing techniques and ROV control. 
-Using the \textbf{Motion Decision Block} the system processes the input frame came from the camera to detect the designated landing spot, then fed the processed frame to Decision Making Algorithm which estimate the relative distance to this spot from the camera's position.
-Based on the estimated distance the Decision Making Algorithm outputs a $(X,Y,Z)$ coordinates indicates direction to move.
-This Coordinates then serves as input for a closed-loop control system, which calculates and directs the appropriate movements for the ROV by the \textbf{Control Block} using the {PID Controller} which stabalizes and smoothes the motion to overcome the effect of the surrounding enviroment.
+Using the \textbf{Motion Decision Block} processes input frames from the camera to identify the designated landing spot. The resulting processed frame is then forwarded to the Decision Making Algorithm, which estimates the relative distance from the camera's position to the identified spot. 
+Subsequently,the Decision Making Algorithm generates $(X,Y,Z)$ coordinates, indicating the direction of movement based on the estimated distance. These coordinates serve as input for a closed-loop control system.The Control Block, equipped with a PID Controller, computes and guides the ROV's movements, stabilizing and smoothing its motion to navigate effectively within the surrounding environment as it overcome the effect of it on the motion.
 %==============================================
 %                  BEGIN FIGURE
 %==============================================
@@ -76,10 +75,9 @@ This Coordinates then serves as input for a closed-loop control system, which ca
 %                  BEGIN FIGURE
 %==============================================
 \subsection{Motion Decision Block}
-The Motion Decision Block software consists of multiple sequential stages.\\
-The First is to process the input frame through Color Detection and Noise reduction Algorithm which isolates the Region Of Interest (in this case is the landing spot) from the surrounding enviroment.\\
-Secondly is thresholding the ROI to be further processed by the Bounding Box Coordinates node which allocates the ROI in the frame in terms of $(X_1,Y_1,X_2,Y_2)$ coordinates.\\
-This Coordinates fed to Decision Making Algorithm which estimates the relative distance from the ROV to the Landing Spot, which be further used to outputs the ROV motion pesents in $(X,Y,Z)$ coordinates as shown in Figure \ref{fig:decision}
+The Motion Decision Block software consists of multiple sequential stages. The first stage involves processing the input frame through a Color Detection and Noise Reduction Algorithm, which serves to isolate the Region Of Interest (in this case, the landing spot) from the surrounding environment. 
+Following this, the ROI is thresholded to be further processed by the Bounding Box Coordinates node, which allocates the ROI in the frame using the $(X1,Y1,X2,Y2)$ coordinates. 
+These coordinates are then fed to the Decision Making Algorithm, which estimates the relative distance from the ROV to the Landing Spot and further produces the ROV motion presented in $(X,Y,Z)$ coordinates, as shown in Figure \ref{fig:decision}
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.7\textwidth]{images/motion.jpg}

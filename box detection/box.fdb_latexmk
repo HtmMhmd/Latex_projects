@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1711841866.74701 "c:/Users/LENOVO/Desktop/Latex_projects/box detection/box.tex" "box.pdf" "box" 1711841868.27575 0
+["pdflatex"] 1711844570.23452 "c:/Users/LENOVO/Desktop/Latex_projects/box detection/box.tex" "box.pdf" "box" 1711844572.16658 0
   "C:/Miktex/fonts/tfm/public/cm/cmbx10.tfm" 1136765053 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "C:/Miktex/fonts/tfm/public/cm/cmbx12.tfm" 1136765053 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "C:/Miktex/fonts/tfm/public/cm/cmr12.tfm" 1136765053 1288 655e228510b4c2a1abe905c368440826 ""
@@ -7,7 +7,6 @@
   "C:/Miktex/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1247596666 32080 340ef9bf63678554ee606688e7b5339d ""
   "C:/Miktex/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1247596667 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "C:/Miktex/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247596667 35752 024fb6c41858982481f6968b5fc26508 ""
-  "C:/Miktex/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1247596667 32762 7fee39e011c23b3589931effd97b9702 ""
   "C:/Miktex/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "C:/Miktex/tex/generic/pgf/basiclayer/pgfcore.code.tex" 1673775190 1016 1c2b89187d12a2768764b83b4945667c ""
   "C:/Miktex/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex" 1673775190 43820 1fef971b75380574ab35a0d37fd92608 ""
@@ -105,9 +104,9 @@
   "C:/Miktex/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "C:/Users/LENOVO/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1711830444 93231 332cd84f541e6713db2a057686ef9d18 ""
   "C:/Users/LENOVO/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1703086494 24125497 8b1ad87af11d0ba301acb91b7ed6b1fa ""
-  "box.aux" 1711841868 960 650201e30f4894ebe426e744a193d656 "pdflatex"
-  "box.tex" 1711841865 6753 05fb0f1f91dd7229c3f594cf1ee480ad ""
-  "c:/Users/LENOVO/Desktop/Latex_projects/box detection/box.tex" 1711841865 6753 05fb0f1f91dd7229c3f594cf1ee480ad ""
+  "box.aux" 1711844571 960 650201e30f4894ebe426e744a193d656 "pdflatex"
+  "box.tex" 1711844568 6828 0fa3a91d6275cd98e8dad14a9170358a ""
+  "c:/Users/LENOVO/Desktop/Latex_projects/box detection/box.tex" 1711844568 6828 0fa3a91d6275cd98e8dad14a9170358a ""
   "images/bbox.jpg" 1711829351 13300 ae153832e39512698c25fe156a09bd0e ""
   "images/color_thre.jpg" 1711828636 2685 36c3ab1357f0d5af6713d23d1f3f61ca ""
   "images/decision.jpg" 1711828663 15417 1b33182580e413cac13523d1bd372a0e ""
