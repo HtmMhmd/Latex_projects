@@ -16,19 +16,19 @@ In order to reconstruct a 3D model of a specific object, Draven rotates around i
   \centering
   \begin{tikzpicture}
     % First figure
-    \node[draw, rectangle, blue, fill=blue!20] (figure1) at (0,2) {\includegraphics[width=0.3\textwidth]{3d_task_figure2/input_images.png}};
+    \node[draw, rectangle, blue, fill=blue!20] (figure1) at (0,2) {\includegraphics[width=0.3\textwidth]{"3d_task_figure2/input_images 2.jpg"}};
     \node[above=65pt, text width=100pt,align=center] at (figure1) {Samples from input images};
   
     % Second figure
-    \node[draw, rectangle, blue, fill=blue!20] (figure2) at (4,2) {\includegraphics[width=0.25\textwidth]{3d_task_figure2/dense.png}};
+    \node[draw, rectangle, blue, fill=blue!20] (figure2) at (4,2) {\includegraphics[width=0.25\textwidth]{3d_task_figure1/reference 2.jpg}};
     \node[above=50pt, text width=100pt,align=center] at (figure2) {Dense reconstruction Output};
   
     % Third figure
-    \node[draw, rectangle, blue, fill=blue!20] (figure3) at (8,4) {\includegraphics[width=0.27\textwidth]{3d_task_figure2/output1.png}};
-    \node[above=40pt,text width=100pt,align=center] at (figure3) {Texture Output from different views};
+    \node[draw, rectangle, blue, fill=blue!20] (figure3) at (8,4) {\includegraphics[width=0.27\textwidth]{3d_task_figure2/op1.jpg}};
+    \node[above=50pt,text width=100pt,align=center] at (figure3) {Texture Output from different views};
   
     % third figure
-    \node[draw, rectangle, blue, fill=blue!20] (figure4) at (8,0) {\includegraphics[width=0.27\textwidth]{3d_task_figure2/output2.png}};
+    \node[draw, rectangle, blue, fill=blue!20] (figure4) at (8,0) {\includegraphics[width=0.27\textwidth]{3d_task_figure2/op2.jpg}};
     
     % Arrow between figures
     \draw[->, line width=1.3pt, blue] (figure1) -- (figure2);
@@ -48,15 +48,15 @@ then it can be saved as a reference on the 3D model for other dimentions measure
   \centering
 \begin{tikzpicture}
   % First figure
-  \node[draw, rectangle, blue, fill=blue!20] (figure1) at (0,0) {\includegraphics[width=0.25\textwidth]{3d_task_figure1/reference.png}};
+  \node[draw, rectangle, blue, fill=blue!20] (figure1) at (0,0) {\includegraphics[width=0.25\textwidth]{3d_task_figure1/reference 2.jpg}};
   \node[above=40pt, text width=3cm,align=center] at (figure1) {Known size reference};
 
   % Second figure
-  \node[draw, rectangle, blue, fill=blue!20] (figure2) at (4,0) {\includegraphics[width=0.25\textwidth]{3d_task_figure1/distance to be measured.png}};
+  \node[draw, rectangle, blue, fill=blue!20] (figure2) at (4,0) {\includegraphics[width=0.25\textwidth]{3d_task_figure1/distance to be measured 2.jpg}};
   \node[above=40pt, text width=100pt,align=center] at (figure2) {Distance to be measured};
 
   % Third figure
-  \node[draw, rectangle, blue, fill=blue!20] (figure3) at (8,0) {\includegraphics[width=0.32\textwidth]{3d_task_figure1/measurement_output.jpg}};
+  \node[draw, rectangle, blue, fill=blue!20] (figure3) at (8,0) {\includegraphics[width=0.32\textwidth]{3d_task_figure1/measurement_output 2.jpg}};
   \node[above=60pt,text width=100pt,align=center] at (figure3) {Measured distance labeled on the model};
 
   % Arrow between figures
