@@ -8,10 +8,9 @@
 \begin{document}
 
 \section*{3D Reconstruction and dimention measurement}
-Photogrammetry is essential for understanding and conserving aquatic ecosystems, particularly in coral reef research and species preservation. By converting 2D images into 3D models, it enables thorough ecosystem assessment and environmental monitoring. This technology provides vital insights into species behavior, contributing to informed conservation efforts and the sustainable management of aquatic habitats.
-
+Photogrammetry is vital for understanding and protecting aquatic ecosystems, particularly in coral reef research and species preservation. By converting 2D images into 3D models, it enables thorough ecosystem assessment and environmental monitoring, providing vital insights into species behavior and contributing to informed conservation efforts and sustainable aquatic habitat management.
 \subsection*{3D Reconstruction Procedures}
-In order to reconstruct a 3D model of a specific object, Draven rotates around it while capturing a video that is then saved as a sequence of individual image frames. Subsequently, a Structure From Motion (SfM) algorithm is employed to analyze these image frames, identifying common visual features across the entire sequence. This process enables the estimation of the camera positions and orientations required to create a dense 3D model. The dense model comprises a collection of points representing these common visual features, effectively capturing the intricate details of the object's structure. Finally, to enhance the realism and appearance of the model, a texturing process is applied, effectively adding surface details and colors to produce a complete and visually accurate 3D representation, as specsified in Figure \ref{fig:reconstruction}.
+To create a 3D model of an object, Draven captures a rotating video, which is then analyzed using a Structure From Motion (SfM) algorithm to identify visual features. This process enables the estimation of camera positions and orientations to form a detailed 3D model. Subsequently, a texturing process is applied to enhance the model's realism by adding surface details and colors, resulting in a visually accurate 3D representation, as specsified in Figure \ref{fig:reconstruction}.
 \begin{figure}[h]
   \centering
   \begin{tikzpicture}
@@ -41,8 +40,7 @@ In order to reconstruct a 3D model of a specific object, Draven rotates around i
 
 
 \subsection*{Dimentions measurement procedures}
-To measure the required dimentions, \textbf{Draven} measure a specsified dimention input from user during runtime through a GUI using Streo Camera,
-then it can be saved as a reference on the 3D model for other dimentions measurement, as specsified in Figure \ref{fig:measurement}.
+Draven measures specific dimensions in real time through a Graphical User Interface (GUI) using a Stereo Camera. These measurements can be saved as references on a 3D model for further dimension evaluations, as depicted in Figure \ref{fig:measurement}.
 
 \begin{figure}[h]
   \centering

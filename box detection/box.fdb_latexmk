@@ -1,9 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1711844570.23452 "c:/Users/LENOVO/Desktop/Latex_projects/box detection/box.tex" "box.pdf" "box" 1711844572.16658 0
-  "C:/Miktex/fonts/tfm/public/cm/cmbx10.tfm" 1136765053 1328 c834bbb027764024c09d3d2bf908b5f0 ""
+["pdflatex"] 1713120210.92436 "c:/Users/LENOVO/Desktop/Latex_projects/box detection/box.tex" "box.pdf" "box" 1713120212.15401 0
   "C:/Miktex/fonts/tfm/public/cm/cmbx12.tfm" 1136765053 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "C:/Miktex/fonts/tfm/public/cm/cmr12.tfm" 1136765053 1288 655e228510b4c2a1abe905c368440826 ""
-  "C:/Miktex/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1247596666 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "C:/Miktex/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1247596666 32080 340ef9bf63678554ee606688e7b5339d ""
   "C:/Miktex/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1247596667 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "C:/Miktex/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247596667 35752 024fb6c41858982481f6968b5fc26508 ""
@@ -102,11 +100,11 @@
   "C:/Miktex/tex/latex/varwidth/varwidth.sty" 1238469540 10894 d359a13923460b2a73d4312d613554c8 ""
   "C:/Miktex/tex/latex/xcolor/xcolor.sty" 1656236890 56148 51a9a8571c07b9921892ae11063ae853 ""
   "C:/Miktex/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "C:/Users/LENOVO/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1711830444 93231 332cd84f541e6713db2a057686ef9d18 ""
+  "C:/Users/LENOVO/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1713026990 93595 ba810530cd0cba63922e96580450017e ""
   "C:/Users/LENOVO/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1703086494 24125497 8b1ad87af11d0ba301acb91b7ed6b1fa ""
-  "box.aux" 1711844571 960 650201e30f4894ebe426e744a193d656 "pdflatex"
-  "box.tex" 1711844568 6828 0fa3a91d6275cd98e8dad14a9170358a ""
-  "c:/Users/LENOVO/Desktop/Latex_projects/box detection/box.tex" 1711844568 6828 0fa3a91d6275cd98e8dad14a9170358a ""
+  "box.aux" 1713120211 960 650201e30f4894ebe426e744a193d656 "pdflatex"
+  "box.tex" 1713120210 6530 811f9d8d587cf45bb4465d43930da990 ""
+  "c:/Users/LENOVO/Desktop/Latex_projects/box detection/box.tex" 1713120210 6530 811f9d8d587cf45bb4465d43930da990 ""
   "images/bbox.jpg" 1711829351 13300 ae153832e39512698c25fe156a09bd0e ""
   "images/color_thre.jpg" 1711828636 2685 36c3ab1357f0d5af6713d23d1f3f61ca ""
   "images/decision.jpg" 1711828663 15417 1b33182580e413cac13523d1bd372a0e ""

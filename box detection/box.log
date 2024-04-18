@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.20)  31 MAR 2024 02:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.20)  14 APR 2024 20:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -365,38 +365,38 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 14.
+(Font)              <7> on input line 76.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 14.
+(Font)              <5> on input line 76.
 <images/motion.jpg, id=4, 508.299pt x 549.7338pt>
 File: images/motion.jpg Graphic file (type jpg)
 <use images/motion.jpg>
-Package pdftex.def Info: images/motion.jpg  used on input line 83.
+Package pdftex.def Info: images/motion.jpg  used on input line 80.
 (pdftex.def)             Requested size: 241.49895pt x 261.18498pt.
 <images/inputjpg.jpg, id=5, 421.575pt x 318.18875pt>
 File: images/inputjpg.jpg Graphic file (type jpg)
 <use images/inputjpg.jpg>
-Package pdftex.def Info: images/inputjpg.jpg  used on input line 95.
+Package pdftex.def Info: images/inputjpg.jpg  used on input line 92.
 (pdftex.def)             Requested size: 68.99895pt x 52.07648pt.
 <images/color_thre.jpg, id=6, 420.57124pt x 317.185pt>
 File: images/color_thre.jpg Graphic file (type jpg)
 <use images/color_thre.jpg>
-Package pdftex.def Info: images/color_thre.jpg  used on input line 99.
+Package pdftex.def Info: images/color_thre.jpg  used on input line 96.
 (pdftex.def)             Requested size: 68.99895pt x 52.03802pt.
 <images/thre.jpg, id=7, 421.575pt x 318.18875pt>
 File: images/thre.jpg Graphic file (type jpg)
 <use images/thre.jpg>
-Package pdftex.def Info: images/thre.jpg  used on input line 103.
+Package pdftex.def Info: images/thre.jpg  used on input line 100.
 (pdftex.def)             Requested size: 68.99895pt x 52.07648pt.
 <images/bbox.jpg, id=8, 252.945pt x 190.91325pt>
 File: images/bbox.jpg Graphic file (type jpg)
 <use images/bbox.jpg>
-Package pdftex.def Info: images/bbox.jpg  used on input line 107.
+Package pdftex.def Info: images/bbox.jpg  used on input line 104.
 (pdftex.def)             Requested size: 68.99895pt x 52.07744pt.
 <images/decision.jpg, id=9, 642.4pt x 481.8pt>
 File: images/decision.jpg Graphic file (type jpg)
 <use images/decision.jpg>
-Package pdftex.def Info: images/decision.jpg  used on input line 120.
+Package pdftex.def Info: images/decision.jpg  used on input line 117.
 (pdftex.def)             Requested size: 86.25pt x 64.6873pt.
 
 
@@ -411,17 +411,17 @@ L3 programming layer <2023-08-29>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 15143 strings out of 475248
- 306983 string characters out of 5774224
+ 15141 strings out of 475248
+ 306962 string characters out of 5774224
  1933785 words of memory out of 5000000
- 36438 multiletter control sequences out of 15000+600000
- 559587 words of font info for 41 fonts, out of 8000000 for 9000
+ 36437 multiletter control sequences out of 15000+600000
+ 559279 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,13n,89p,527b,1344s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Miktex/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on box.pdf (3 pages, 177892 bytes).
+ 84i,13n,89p,735b,1344s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Miktex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on box.pdf (3 pages, 164601 bytes).
 PDF statistics:
- 41 PDF objects out of 1000 (max. 8388607)
+ 36 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  43 words of extra memory for PDF output out of 10000 (max. 10000000)
 

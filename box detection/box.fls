@@ -178,7 +178,6 @@ INPUT C:\Miktex\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Miktex\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Miktex\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Miktex\fonts\tfm\public\cm\cmbx12.tfm
-INPUT C:\Miktex\fonts\tfm\public\cm\cmbx10.tfm
 INPUT C:\Miktex\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Miktex\fonts\tfm\public\cm\cmbx12.tfm
 INPUT .\images\motion.jpg
@@ -226,8 +225,6 @@ INPUT .\images\decision.jpg
 INPUT .\images\decision.jpg
 INPUT C:\Users\LENOVO\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT box.aux
-INPUT C:\Miktex\fonts\type1\public\amsfonts\cm\cmbx10.pfb
-INPUT C:\Miktex\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT C:\Miktex\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Miktex\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Miktex\fonts\type1\public\amsfonts\cm\cmmi10.pfb

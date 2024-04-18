@@ -9,10 +9,7 @@
 \begin{document}
 
 \section{Autonomous Landing System}
-\textbf{Draven} software enables it to land to specsifiied spot autonomously through the utilization of advanced image processing techniques and ROV control. 
-Using the \textbf{Motion Decision Block} processes input frames from the camera to identify the designated landing spot. The resulting processed frame is then forwarded to the Decision Making Algorithm, which estimates the relative distance from the camera's position to the identified spot. 
-Subsequently,the Decision Making Algorithm generates $(X,Y,Z)$ coordinates, indicating the direction of movement based on the estimated distance. These coordinates serve as input for a closed-loop control system.The Control Block, equipped with a PID Controller, computes and guides the ROV's movements, stabilizing and smoothing its motion to navigate effectively within the surrounding environment as it overcome the effect of it on the motion.
-%==============================================
+Draven's software autonomously guides the ROV to a specified location using advanced image processing and ROV control. The Motion Decision Block processes camera input to identify the landing spot, which is then evaluated by the Decision Making Algorithm to estimate the distance to the spot. The algorithm generates coordinates for movement direction, which are utilized by a closed-loop control system. Equipped with a PID Controller, the Control Block computes and smoothens the ROV's movements, allowing it to navigate effectively within the environment and counteract external effects on its motion.%==============================================
 %                  BEGIN FIGURE
 %==============================================
 
