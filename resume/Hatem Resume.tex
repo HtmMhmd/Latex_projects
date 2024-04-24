@@ -1,10 +1,9 @@
 %-------------------------
 % Resume in Latex
-
 %------------------------
 
 \documentclass[letterpaper,11pt]{article}
-
+\usepackage{scalerel}
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -31,7 +30,6 @@
 % serif
 % \usepackage{CormorantGaramond}
 % \usepackage{charter}
-
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -78,6 +76,14 @@
     \end{tabular*}\vspace{-7pt}
 }
 
+\newcommand{\experienceSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} $|$ {\small#3} & {#2} \\
+      \hfill & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
 
 \newcommand{\resumeSubSubheading}[2]{
     \vspace{-2pt}\item
@@ -104,14 +110,13 @@
     \end{tabular*}\vspace{-7pt}
 }
 
+\newcommand{\resumeCertificate}[3]{
+  \vspace{-2pt}\item[\scaleobj{0.7}{\bullet}]
 
-\newcommand{\resumeOrganizationHeading}[4]{
-  \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \textit{\small #2} \\
-      \textit{\small#3}
-    \end{tabular*}\vspace{-7pt}
-}
+  \begin{tabular*}{0.92\textwidth}[t]{l@{\extracolsep{\fill}}r}
+  \textbf{#1} $|$ \small{#2} & \hfill{\textit{#3}} \\
+  \end{tabular*}\vspace{-7pt}
+  }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
@@ -119,6 +124,7 @@
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
@@ -129,35 +135,33 @@
 \begin{document}
 
 %---------- HEADING ----------
-
 \begin{center}
-    \textbf{\Huge \scshape Hatem Mohamed Ahmed} \\ \vspace{3pt}
+    \textbf{\huge \scshape Hatem Mohamed Ahmed}\\ \vspace{3pt}
     \small
-    \color{blue} 
-    \faMobile \hspace{.5pt} \href{tel:01117660835}{+20 1117660835}
+    \faMobile\hspace{.5pt} \href{tel:01117660835}{\color{blue}{+20 1117660835}}
     $|$
-    \faAt \hspace{.5pt} \href{mailto: hatemmohamed3141@gmail.com}{hatemmohamed3141@gmail.com}
+ \faAt\hspace{.5pt}\href{mailto: hatemmohamed3141@gmail.com} {\color{blue}{hatemmohamed3141@gmail.com}}
     $|$
-    \faLinkedinSquare \hspace{.5pt} \href{https://linkedin.com/in/hatem-mohamed-6175b0244/}{LinkedIn}
+    \faLinkedinSquare \hspace{.5pt} \href{https://linkedin.com/in/hatem-mohamed-6175b0244/}{\color{blue}{LinkedIn}}
     $|$
-    \faGithub \hspace{.5pt} \href{https://github.com/HtmMhmd}{GitHub}
+    \faGithub \hspace{.5pt} \href{https://github.com/HtmMhmd}{\color{blue}{GitHub}}
     $|$
-    %\faGlobe \hspace{.5pt} \href{https://arasgungore.github.io}{Portfolio}
-    $|$
-    \faMapMarker \hspace{.5pt} \href{https://maps.google.com?q=%D9%85%D9%84%D8%A7%D8%B9%D8%A8%20%D8%A7%D9%84%D9%8A%D9%88%D9%81%D9%8A%D8%8C%20%D9%83%D9%88%D8%A8%D8%B1%D9%8A%20%D8%A7%D9%84%D8%B9%D9%85%D8%A7%D8%B1%D9%88%D8%A9%20%D9%82%D8%A8%D9%84%20%D9%82%D8%B3%D9%85%20%D9%85%D9%86%D8%AA%D8%B2%D8%A9%20%D8%AA%D8%A7%D9%84%D8%AA,%20El%20Qasem,%20Alexandria%20Governorate&ftid=0x14f5db5c9a5524d9:0xbc40af6c84719b38&entry=gps&lucs=,94208286,94216395,47071704,94206167,47069508,47084304&g_st=ic}{Alexandria, Egypt}
+    \faMapMarker \hspace{.5pt} \href{https://maps.google.com?q=%D9%85%D9%84%D8%A7%D8%B9%D8%A8%20%D8%A7%D9%84%D9%8A%D9%88%D9%81%D9%8A%D8%8C%20%D9%83%D9%88%D8%A8%D8%B1%D9%8A%20%D8%A7%D9%84%D8%B9%D9%85%D8%A7%D8%B1%D9%88%D8%A9%20%D9%82%D8%A8%D9%84%20%D9%82%D8%B3%D9%85%20%D9%85%D9%86%D8%AA%D8%B2%D8%A9%20%D8%AA%D8%A7%D9%84%D8%AA,%20El%20Qasem,%20Alexandria%20Governorate&ftid=0x14f5db5c9a5524d9:0xbc40af6c84719b38&entry=gps&lucs=,94208286,94216395,47071704,94206167,47069508,47084304&g_st=ic}{\color{blue}{Alexandria, Egypt}}
 \end{center}
 
 
-
-%----------- EDUCATION -----------
+\section{Summary}
+  \vspace{3pt}
+  With two years of experience as a skilled \textbf{Deep Learning and Embedded Systems Engineer}, Specalized in creating advanced deep learning models for diverse applications. My passion lies in enhancing self-driving vehicles by developing reliable embedded systems capable of processing real-time data for safe navigation.
+  %----------- EDUCATION -----------
 
 \section{Education}
   \vspace{3pt}
   \resumeSubHeadingListStart
 
     %\resumeEducationHeading
-      \item{Bachelor of Communication and Electronics Engineering, }{Alexandria University}
-      \hfill{Sep 2020 \textbf{--} Present} \\ \textbf{GPA: 3.24/4.00}
+      \item\textbf{Bachelor of Communication and Electronics Engineering, }{Alexandria University}
+      \hfill\textit{Sep 2020 \textbf{--} Present} \\ \textbf{GPA: 3.24/4.00}
     
     \resumeSubHeadingListEnd
 
@@ -167,16 +171,18 @@
   \vspace{2pt}
   \resumeSubHeadingListStart
 
-    \small{\item{
-        
-        \textbf{Languages:}{ C, Python} \\ \vspace{3pt}
-        
-        \textbf{Methodologies:}{ Computer Vision, Image Processing, Machine Learning, Deep Learning, OOP, SOLID principles, Design Patterns, OS, Date Structures} \\ \vspace{3pt}
-        
-        \textbf{Technologies:}{ Qt, Git$/$Github, ROS, OpenCV, TensorFlow, Sklearn, Pandas, YOLO, Skimage, Latex} \\ \vspace{3pt}
-        
-        
-    }}
+        \small{\item{
+        \textbf{Languages:}{ C, Python.} \\ \vspace{3pt}
+        }}
+        \small{\item{    
+        \textbf{Methodologies:}{ Computer Vision, Image Processing, Machine Learning, Deep Learning, Embedded Systems, OOP, SOLID principles, Design Patterns, OS, Date Structures, Linux, GUI.} \\ \vspace{3pt}
+        }}
+        \small{\item{    
+        \textbf{Technologies:}{ Git$/$Github, ROS, OpenCV, NumPy, Matplotlib, TensorFlow, Sklearn, Pandas, YOLO, Skimage, PyQt, Latex.} \\ \vspace{3pt}
+        }}
+        \small{\item{
+          \textbf{Micro-Controllers:}{ PIC, TivaC, AVR}
+        }}
   \resumeSubHeadingListEnd
 
 
@@ -187,15 +193,14 @@
   \vspace{3pt}
   \resumeSubHeadingListStart
 
-    \resumeSubheading
-      {Company}{country}
-      {Position}{Start date \textbf{--} End, Full-time}
+    \experienceSubheading
+      {CrocoMarine ROV}{Egypt, Alexandria}{Software Engineer}
+      {September 2022 \textbf{--} Present}
         \resumeItemListStart
-            \resumeItem{Details.}
-            \resumeItem{Details.}
+            \resumeItem{Responsible for data collection, AI systems training and creating Image Processing algorithms for ROV participated in national and international competitions.}
+            \resumeItem{Instructing the newcommers a content of supervised Machine Learning algorithms, Deep Learning optmization and famous CNN architectures.}
+            \resumeItem{Documenting the project and its progress during the season using Latex.}
         \resumeItemListEnd
-
-    
     
   \resumeSubHeadingListEnd
 
@@ -206,14 +211,24 @@
 \section{Competitions \& Achievements}
   \vspace{2pt}
   \resumeSubHeadingListStart
-    \small{\item{
-        \textbf{Title:}{ Details. (Month 2023)} \\ \vspace{3pt}
+    {\item[\scaleobj{0.6}{\bullet}]{
+        \textbf{Underwater Robotics Challenge (UWRC) :} \hfill\textit{Oct 2023}\\
+        - \small{\textbf{Achieved 4th place} in the competition for developing a realtime autonomous line follower ROV system and an algorithm that estimates the total length of input digital images of a specific type of fish and adds a label along the detected fish using deep learning and image processing.} \\ \vspace{3pt}
+    }}
+    {\item[\scaleobj{0.6}{\bullet}]{
+      \textbf{Dell Technologies Hacktrik competition :}\hfill\textit{Feb 2024}\\
+      - \small{\textbf{Achieved 20th place} in the competition with total points of 114/121 by taking the first place as a reference for training a time efficient system which intercepts real messages sent by a server hidden in a set of images using deep learning.} \\ \vspace{3pt}
 
-    
-        
+    }}
+    {\item[\scaleobj{0.6}{\bullet}]{
+		\textbf{\href{https://www.kaggle.com/code/tommy011/top-10-houses-prices-using-pycaret}{{Kaggle Housing Prices Competitions}}:}\hfill\textit{Apr 2024}\\
+		- \small{ \textbf{Achieved 481th of 4860} with the use of an enasmble of multiple Machine Learning Algorithms, Data cleaning and  Preprocessing Techniques I have managed to achive top 10\% .} \\ \vspace{3pt}
+	}}
+    {\item[\scaleobj{0.6}{\bullet}]{
+      \textbf{MATE Regional ROV Competitions:}\hfill\textit{May 2024}\\
+    - \small{ Developing a realtime autonomous landing ROV system and 3D reconstruction system using Structure from Motion algorithm.} \\ \vspace{3pt}
     }}
   \resumeSubHeadingListEnd
-
 
 
 %----------- PROJECTS -----------
@@ -221,75 +236,90 @@
 \section{Projects}
     \vspace{3pt}
     \resumeSubHeadingListStart
-      
-      \resumeProjectHeading
-        {\textbf{Project Title} $|$ \emph{\href{Project Link}{\color{blue}GitHub}}}{}
-          \resumeItemListStart
-            \resumeItem{Project Details.}
-          \resumeItemListEnd
-      
-      
-      
+
+    \subsection*{1. Machine Learning and Deep Learning Projects}
+    \vspace{1pt}
+    \resumeProjectHeading
+    {\textbf{Kaggle Datasets} $|$ \emph{\href{https://www.kaggle.com/tommy011/code}{\color{blue}Kaggle}}}{}
+    \resumeItemListStart
+      \resumeItem{I have managed to analyze various Kaggle datasets like Kidney stones detection, Road Segmentation, Facial pose Estimation and many more.}
+      \resumeItem{I have developed models for image datasets using various deep learning architectures, including Convolutional Neural like VGG, ResNet and Inception, Object Detection Models like YOLO versions models and Segmentation Models like UNET.}
+      \resumeItem{I have also worked on tabular data datasets and used machine learning algorithms from scikit-learn to build predictive models.} 
+    \resumeItemListEnd
+
+    \subsection*{2. Computer Vision and image processing Projects}
+     \vspace{1pt}
+    \resumeProjectHeading
+    {\textbf{Wooden Box Measurement} $|$ \emph{\href{https://github.com/your-username/wooden-box-measurement}{\color{blue}GitHub}}}{}
+    \resumeItemListStart
+      \resumeItem{Developed a project to measure the dimensions of a wooden box using image processing and AI detection techniques.}
+      \resumeItem{Utilized YOLOv8 for object detection and Harris corner detection for accurate measurement of the box dimensions.}
+      \resumeItem{Custom data was annotated using RoboFlow to train the YOLOv8 model for box detection.}
+      \resumeItem{Generated a 3D model of the box using Midas for accurate planning and designing purposes.}
+    \resumeItemListEnd
+    
+    \resumeProjectHeading
+    {\textbf{QR Code Generation and Reader} $|$ \emph{\href{https://github.com/HtmMhmd/QR-code-Generation-and-Reader}{\color{blue}GitHub}}}{}
+    \resumeItemListStart
+      \resumeItem{This project involved implementing QR Code Generation and Reader packages using structured programming, SOLID principles, and object-oriented programming (OOP) concepts in Python. The goal was to provide an easy and efficient way to generate and read QR codes within applications.}
+    \resumeItemListEnd
+
+    \resumeProjectHeading
+    {\textbf{Feature Detection} $|$ \emph{\href{https://github.com/your-username/sift-orb-feature-detection}{\color{blue}GitHub}}}{}
+    \resumeItemListStart
+      \resumeItem{Implemented SIFT and ORB feature detection algorithms in Python using OpenCV library.}
+      \resumeItem{Utilized BFMatcher and FLANN matching algorithms for finding the best matches between feature descriptors.}
+      \resumeItemListEnd
+    
+  \subsection*{3. Embedded Systems Projects}
+   \vspace{1pt}
+  \resumeProjectHeading
+  {\textbf{TivaC Microcontroller Drivers} $|$ \emph{\href{https://github.com/HtmMhmd/TivaC-microcontroller-drivers}{\color{blue}GitHub}}}{}
+    \resumeItemListStart
+      \resumeItem{This library provides a comprehensive set of functions for controlling GPIO pins on TivaC microcontrollers using TivaWare Drivers. It simplifies the process of interfacing with GPIO pins, ensuring efficient and reliable control for various embedded system applications.}
+    \resumeItemListEnd
+
+    \resumeProjectHeading
+    {\textbf{PIC Microcontroller Drivers} $|$ \emph{\href{https://github.com/HtmMhmd/TivaC-microcontroller-drivers}{\color{blue}GitHub}}}{}
+    \resumeItemListStart
+      \resumeItem{Developed drivers and configurations for PIC microcontrollers based on a Layer architecture for various applications.}
+    \resumeItemListEnd
+
+
+    \subsection*{4. Robotics Projects}
+     \vspace{1pt}
+    \resumeProjectHeading
+    {\textbf{ROS Packages} $|$ \emph{\href{https://github.com/HtmMhmd/ROS_packages}{\color{blue}GitHub}}}{}
+      \resumeItemListStart
+          \resumeItem{Developed ROS packages for various applications, including subscriber-publisher, service-client, and motion control.}
+          \resumeItem{Implemented subscriber-publisher packages to enable communication between different nodes in a ROS system, allowing for real-time data exchange and coordination.}
+          \resumeItem{Created service-client packages to facilitate request-response interactions between nodes, enabling the execution of specific tasks or services.}
+          \resumeItem{Designed and implemented motion control packages to control the movement of robotic systems, including trajectory planning, kinematics, and dynamics.}
+      \resumeItemListEnd
+
+
+      % \resumeProjectHeading
+      % {\textbf{Project Title} $|$ \emph{\href{Project Link}{\color{blue}GitHub}}}{}
+      %   \resumeItemListStart
+      %     \resumeItem{Project Details.}
+      %   \resumeItemListEnd
+
+
+          
     \resumeSubHeadingListEnd
-
-
-
-%----------- RELEVANT COURSEWORK -----------
-
-% \section{Relevant Coursework}
-  % \vspace{2pt}
-  % \resumeSubHeadingListStart
-    % \small{\item{
-        % \textbf{Major coursework:}{ Materials Science, Electrical Circuits I-II, Digital System Design, Numerical Methods, Probability Theory, Electronics I-II, Signals and Systems, Electromagnetic Field Theory, Energy Conversion, System Dynamics and Control, Communication Engineering, Pattern Recognition, Introduction to Digital Signal Processing, Introduction to Digital Communications, Introduction to Database Systems, Introduction to Image Processing, Machine Vision} \\ \vspace{3pt}
-        
-        % \textbf{Minor coursework:}{ Discrete Computational Structures, Introduction to Object-Oriented Programming, Data Structures and Algorithms, Computer Organization, Fundamentals of Software Engineering}
-    % }}
-  % \resumeSubHeadingListEnd
-
-
 
 %----------- CERTIFICATES -----------
 
 \section{Certificates}
+  \vspace{0.5pt}
    \resumeSubHeadingListStart
     
-     \resumeOrganizationHeading
-       {Certificate Title}{Month 2024}{Details.}
+      \resumeCertificate{Machine Learning Specalization}{coursera}{}
+      \resumeCertificate{Deep Learning Specalization}{coursera}{}
+      \resumeCertificate{TensorFlow Developer Specialization}{coursera}{}
+      \resumeCertificate{Advanced Techniques Specialization}{coursera}{}
     
    \resumeSubHeadingListEnd
-
-
-
-%----------- ORGANIZATIONS -----------
-
-% \section{Organizations}
-  % \resumeSubHeadingListStart
-    
-    % \resumeOrganizationHeading
-      % {Institute of Electrical and Electronics Engineers (IEEE)}{Feb 2022 -- Present}{Student Member}
-    
-  % \resumeSubHeadingListEnd
-
-
-
-%----------- HOBBIES -----------
-
-% \section{Hobbies}
-  % \resumeSubHeadingListStart
-    % \small{\item{Basketball, Swimming, Fitness, Eight-ball, Horology}}
-  % \resumeSubHeadingListEnd
-
-
-
-%----------- REFERENCES -----------
-
-% \section{References}
-  % \vspace{2pt}
-  % \resumeSubHeadingListStart
-    % \item{References available upon request.}
-  % \resumeSubHeadingListEnd
-
-
 
 %-------------------------------------------
 \end{document}
