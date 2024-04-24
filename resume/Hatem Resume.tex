@@ -61,6 +61,9 @@
 %-------------------------
 % Custom commands
 
+\newcommand*\link[1]{\hspace*{0em plus 1fill}\makebox{[#1]}}
+
+
 \newcommand{\resumeItem}[1]{
   \item\small{
     {#1 \vspace{-2pt}}
@@ -99,15 +102,15 @@
       \textbf{#1} & \small{#2} 
       {\textit{\small#3}} \\ {\textit{\small #4}} 
 
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}\vspace{-7pt}
 }
 
 
 \newcommand{\resumeProjectHeading}[2]{
-    \vspace{-2pt}\item
+    \vspace{-3pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
+      \small#1 & \\ \ #2 
+    \end{tabular*}\vspace{-8pt}
 }
 
 \newcommand{\resumeCertificate}[3]{
@@ -175,7 +178,7 @@
         \textbf{Languages:}{ C, Python.} \\ \vspace{3pt}
         }}
         \small{\item{    
-        \textbf{Methodologies:}{ Computer Vision, Image Processing, Machine Learning, Deep Learning, Embedded Systems, OOP, SOLID principles, Design Patterns, OS, Date Structures, Linux, GUI.} \\ \vspace{3pt}
+        \textbf{Methodologies:}{ OOP, SOLID principles, Design Patterns, OS, Date Structures, Linux.} \\ \vspace{3pt}
         }}
         \small{\item{    
         \textbf{Technologies:}{ Git$/$Github, ROS, OpenCV, NumPy, Matplotlib, TensorFlow, Sklearn, Pandas, YOLO, Skimage, PyQt, Latex.} \\ \vspace{3pt}
@@ -240,8 +243,9 @@
     \subsection*{1. Machine Learning and Deep Learning Projects}
     \vspace{1pt}
     \resumeProjectHeading
-    {\textbf{Kaggle Datasets} $|$ \emph{\href{https://www.kaggle.com/tommy011/code}{\color{blue}Kaggle}}}{}
+    {\textbf{1.1. Kaggle Datasets} $|$ \emph{\href{https://www.kaggle.com/tommy011/code}{\color{blue}Kaggle}}}{}
     \resumeItemListStart
+      \hfill\small\textbf{Python, Tensorflow, Sklearn, Pandas, NumPy, OpenCV, Matplotlib}
       \resumeItem{I have managed to analyze various Kaggle datasets like Kidney stones detection, Road Segmentation, Facial pose Estimation and many more.}
       \resumeItem{I have developed models for image datasets using various deep learning architectures, including Convolutional Neural like VGG, ResNet and Inception, Object Detection Models like YOLO versions models and Segmentation Models like UNET.}
       \resumeItem{I have also worked on tabular data datasets and used machine learning algorithms from scikit-learn to build predictive models.} 
@@ -250,23 +254,25 @@
     \subsection*{2. Computer Vision and image processing Projects}
      \vspace{1pt}
     \resumeProjectHeading
-    {\textbf{Wooden Box Measurement} $|$ \emph{\href{https://github.com/your-username/wooden-box-measurement}{\color{blue}GitHub}}}{}
+    {\textbf{2.1. Wooden Box Measurement} $|$ \emph{\href{https://github.com/your-username/wooden-box-measurement}{\color{blue}GitHub}}}{}
     \resumeItemListStart
-      \resumeItem{Developed a project to measure the dimensions of a wooden box using image processing and AI detection techniques.}
-      \resumeItem{Utilized YOLOv8 for object detection and Harris corner detection for accurate measurement of the box dimensions.}
+      \hfill\small\textbf{Python, YOLOv8, OpenCV, MiDas, OOP, SOLID,Structured programming, Git/Github}
+      \resumeItem{Developed a project to measure the dimensions of a wooden box using image processing and AI detection techniques using YOLOv8 for object detection and Harris corner detection for accurate measurement of the box dimensions.}
       \resumeItem{Custom data was annotated using RoboFlow to train the YOLOv8 model for box detection.}
       \resumeItem{Generated a 3D model of the box using Midas for accurate planning and designing purposes.}
     \resumeItemListEnd
     
     \resumeProjectHeading
-    {\textbf{QR Code Generation and Reader} $|$ \emph{\href{https://github.com/HtmMhmd/QR-code-Generation-and-Reader}{\color{blue}GitHub}}}{}
+    {\textbf{2.2. QR Code Generation and Reader} $|$ \emph{\href{https://github.com/HtmMhmd/QR-code-Generation-and-Reader}{\color{blue}GitHub}}}{}
     \resumeItemListStart
+    \hfill\small\textbf{Python, qrcode, qreader, OpenCV, OOP, SOLID,Structured programming, Git/Github}
       \resumeItem{This project involved implementing QR Code Generation and Reader packages using structured programming, SOLID principles, and object-oriented programming (OOP) concepts in Python. The goal was to provide an easy and efficient way to generate and read QR codes within applications.}
     \resumeItemListEnd
 
     \resumeProjectHeading
-    {\textbf{Feature Detection} $|$ \emph{\href{https://github.com/your-username/sift-orb-feature-detection}{\color{blue}GitHub}}}{}
+    {\textbf{2.3. Feature Detection} $|$ \emph{\href{https://github.com/your-username/sift-orb-feature-detection}{\color{blue}GitHub}}}{}
     \resumeItemListStart
+    \hfill\small\textbf{Python, OpenCV, OOP, SOLID, Structured programming, Git/Github}
       \resumeItem{Implemented SIFT and ORB feature detection algorithms in Python using OpenCV library.}
       \resumeItem{Utilized BFMatcher and FLANN matching algorithms for finding the best matches between feature descriptors.}
       \resumeItemListEnd
@@ -274,23 +280,25 @@
   \subsection*{3. Embedded Systems Projects}
    \vspace{1pt}
   \resumeProjectHeading
-  {\textbf{TivaC Microcontroller Drivers} $|$ \emph{\href{https://github.com/HtmMhmd/TivaC-microcontroller-drivers}{\color{blue}GitHub}}}{}
+  {\textbf{3.1. TivaC Microcontroller Drivers} $|$ \emph{\href{https://github.com/HtmMhmd/TivaC-microcontroller-drivers}{\color{blue}GitHub}}}{}
     \resumeItemListStart
+      \hfill\small\textbf{C, TivaWare, Structured programming, Git/Github}
       \resumeItem{This library provides a comprehensive set of functions for controlling GPIO pins on TivaC microcontrollers using TivaWare Drivers. It simplifies the process of interfacing with GPIO pins, ensuring efficient and reliable control for various embedded system applications.}
     \resumeItemListEnd
 
     \resumeProjectHeading
-    {\textbf{PIC Microcontroller Drivers} $|$ \emph{\href{https://github.com/HtmMhmd/TivaC-microcontroller-drivers}{\color{blue}GitHub}}}{}
+    {\textbf{3.2. PIC Microcontroller Drivers} $|$ \emph{\href{https://github.com/HtmMhmd/TivaC-microcontroller-drivers}{\color{blue}GitHub}}}{}
     \resumeItemListStart
+      \hfill\small\textbf{C, Structured programming, Git/Github}
       \resumeItem{Developed drivers and configurations for PIC microcontrollers based on a Layer architecture for various applications.}
     \resumeItemListEnd
-
 
     \subsection*{4. Robotics Projects}
      \vspace{1pt}
     \resumeProjectHeading
-    {\textbf{ROS Packages} $|$ \emph{\href{https://github.com/HtmMhmd/ROS_packages}{\color{blue}GitHub}}}{}
+    {\textbf{4.1. ROS Packages} $|$ \emph{\href{https://github.com/HtmMhmd/ROS_packages}{\color{blue}GitHub}}}{}
       \resumeItemListStart
+          \hfill\small\textbf{Python, ROS}
           \resumeItem{Developed ROS packages for various applications, including subscriber-publisher, service-client, and motion control.}
           \resumeItem{Implemented subscriber-publisher packages to enable communication between different nodes in a ROS system, allowing for real-time data exchange and coordination.}
           \resumeItem{Created service-client packages to facilitate request-response interactions between nodes, enabling the execution of specific tasks or services.}
