@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.20)  24 APR 2024 09:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.20)  24 APR 2024 20:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -349,24 +349,24 @@ File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 ) (Hatem Resume.aux)
 \openout1 = `"Hatem Resume.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 138.
+LaTeX Font Info:    ... okay on input line 138.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 138.
+LaTeX Font Info:    ... okay on input line 138.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 138.
+LaTeX Font Info:    ... okay on input line 138.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 138.
+LaTeX Font Info:    ... okay on input line 138.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 138.
+LaTeX Font Info:    ... okay on input line 138.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 138.
+LaTeX Font Info:    ... okay on input line 138.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 138.
+LaTeX Font Info:    ... okay on input line 138.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 138.
+LaTeX Font Info:    ... okay on input line 138.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 138.
+LaTeX Font Info:    ... okay on input line 138.
 
 (C:\Miktex\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -389,7 +389,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 (C:\Miktex\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 135.
+Package hyperref Info: Link coloring OFF on input line 138.
  (Hatem Resume.out)
 (Hatem Resume.out)
 \@outlinefile=\write3
@@ -398,35 +398,35 @@ Package hyperref Info: Link coloring OFF on input line 135.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
-(Font)              using `OT1/cmr/bx/n' instead on input line 139.
+(Font)              using `OT1/cmr/bx/n' instead on input line 142.
 
 LaTeX Font Info:    Trying to load font information for U+fontawesometwo on inp
-ut line 141.
+ut line 144.
 (C:\Miktex\tex/latex/fontawesome\ufontawesometwo.fd
 File: ufontawesometwo.fd 2016/05/22 Font definitions for U/fontawesometwo.
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 142.
+(Font)              <7> on input line 145.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 142.
+(Font)              <5> on input line 145.
 LaTeX Font Info:    Trying to load font information for U+lasy on input line 14
-2.
+5.
 
 (C:\Miktex\tex/latex/base\ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    Trying to load font information for U+fontawesomeone on inp
-ut line 143.
+ut line 146.
 
 (C:\Miktex\tex/latex/fontawesome\ufontawesomeone.fd
 File: ufontawesomeone.fd 2016/05/22 Font definitions for U/fontawesomeone.
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 198.
+(Font)              <10.95> on input line 201.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 198.
+(Font)              <8> on input line 201.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 198.
+(Font)              <6> on input line 201.
 
 
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
@@ -443,7 +443,13 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                Make it at least 4.08003pt, for example:
 (fancyhdr)                \setlength{\footskip}{4.08003pt}.
 
-[2] (Hatem Resume.aux)
+[2]
+
+Package fancyhdr Warning: \footskip is too small (0.0pt): 
+(fancyhdr)                Make it at least 4.08003pt, for example:
+(fancyhdr)                \setlength{\footskip}{4.08003pt}.
+
+[3] (Hatem Resume.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
@@ -456,13 +462,13 @@ Package rerunfilecheck Info: File `"Hatem Resume".out' has not changed.
 (rerunfilecheck)             Checksum: 2867378EECDE4FDAB0192374B049618E;705.
  ) 
 Here is how much of TeX's memory you used:
- 12736 strings out of 475248
- 194694 string characters out of 5774224
- 1940785 words of memory out of 5000000
- 34072 multiletter control sequences out of 15000+600000
+ 12738 strings out of 475248
+ 194704 string characters out of 5774224
+ 1941785 words of memory out of 5000000
+ 34073 multiletter control sequences out of 15000+600000
  565616 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,79p,568b,718s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,11n,79p,568b,722s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Miktex/fonts/type1/public/fontawesome/FontAwesome.pfb><C:/Miktex/fonts/ty
 pe1/public/amsfonts/cm/cmbx10.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmb
 x12.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Miktex/fonts
@@ -470,9 +476,9 @@ x12.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Miktex/fonts
 /cmmi10.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Miktex/font
 s/type1/public/amsfonts/cm/cmsy10.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm
 /cmsy6.pfb><C:/Miktex/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on "Hatem Resume.pdf" (2 pages, 161339 bytes).
+Output written on "Hatem Resume.pdf" (3 pages, 163077 bytes).
 PDF statistics:
- 114 PDF objects out of 1000 (max. 8388607)
- 10 named destinations out of 1000 (max. 500000)
+ 118 PDF objects out of 1000 (max. 8388607)
+ 11 named destinations out of 1000 (max. 500000)
  57 words of extra memory for PDF output out of 10000 (max. 10000000)
 
