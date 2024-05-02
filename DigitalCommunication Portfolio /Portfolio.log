@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.5.1)  2 MAY 2024 21:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.5.1)  2 MAY 2024 23:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -496,25 +496,25 @@ LaTeX Warning: Unused global option(s):
 (Portfolio.aux)
 \openout1 = `Portfolio.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-Package hyperref Info: Link coloring OFF on input line 81.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+Package hyperref Info: Link coloring OFF on input line 84.
  (Portfolio.out) (Portfolio.out)
 \@outlinefile=\write3
 \openout3 = `Portfolio.out'.
@@ -551,54 +551,41 @@ Chapter 1.
 [2
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 169--170
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
 
  []
 
 [3]
-Overfull \hbox (8.00772pt too wide) in paragraph at lines 277--280
- []\OT1/cmr/bx/n/10 Question 10[] \OT1/cmr/m/n/10 Why out-side sam-pling times, over-lap-ping pulses is of no prac-ti-cal sig-nif-i-cance?                
- []
-
-Package mdframed Info: Not enough space on this page on input line 281.
-[4]
-Package mdframed Info: Not enough space on this page on input line 281.
-Package mdframed Info: Box was splittet wrong
- starting loop to iterate the splitting point
-(mdframed)              on input line 348.
- [5] [6] [7]
-Overfull \hbox (235.67535pt too wide) detected at line 483
-[][][]\OML/cmm/m/it/10 P[]C\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 f \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 R[]\OT1/cmr/m/n/10 ) + \OML/cmm/m/it/10 P[]C\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 ) + \OML/cmm/m/it/10 P[]C\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 f \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 R[]\OT1/cmr/m/n/10 ) = [] []
+Overfull \hbox (5.02493pt too wide) in paragraph at lines 231--234
+ []\OT1/cmr/bx/n/10 Question 1.1.4[] \OT1/cmr/m/n/10 Do we need to have zero ISI at each time in-stant? or just at sam-pling time?                
  []
 
 
-Overfull \hbox (150.92662pt too wide) detected at line 500
-[][][][] [] \OT1/cmr/m/n/10 + [] = 0
+Underfull \hbox (badness 10000) in paragraph at lines 280--283
+
  []
 
+[4] [5]
+Package mdframed Info: Not enough space on this page on input line 439.
+ [6]
+Package mdframed Info: Not enough space on this page on input line 439.
+ [7] [8]
+Underfull \hbox (badness 10000) in paragraph at lines 531--534
 
-Overfull \hbox (67.9457pt too wide) in paragraph at lines 512--513
-[]$\OML/cmm/m/it/10 Weneedtocheckifthisequationholdsforallfintherange \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 R[]=\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 ; R[]=\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 :Wecanstartbyconsideringthecasewhenf \OT1/cmr/m/n/10 =
  []
 
-Package mdframed Info: Box was splittet wrong
- starting loop to iterate the splitting point
-(mdframed)              on input line 532.
-[8]
-Overfull \hbox (11.25603pt too wide) in paragraph at lines 536--539
- []\OT1/cmr/bx/n/10 Question 17[] $\OML/cmm/m/it/10 P[]C\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 )$ ex-hibits odd sym-me-try with re-spect to $\OML/cmm/m/it/10 f \OT1/cmr/m/n/10 = []$. Ver-ify odd sym-me-try.                
- []
-
-[9] [10]
+[9]
+Package mdframed Info: Not enough space on this page on input line 587.
+ [10] [11] [12] [13]
 Chapter 2.
-[11
+[14
 
 ]
 Chapter 3.
 \tf@thm=\write5
 \openout5 = `Portfolio.thm'.
 
-[12
+[15
 
 ] 
 enddocument/afterlastpage: lastpage setting LastPage.
@@ -608,20 +595,20 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
  ***********
 Package rerunfilecheck Info: File `Portfolio.out' has not changed.
-(rerunfilecheck)             Checksum: 830CE2460C40F564D96B7DFD74473F0D;754.
+(rerunfilecheck)             Checksum: 65767F64C4E6DB94460D0E2212293876;841.
  ) 
 Here is how much of TeX's memory you used:
- 13208 strings out of 476334
- 215109 string characters out of 5793018
- 1965493 words of memory out of 5000000
- 35077 multiletter control sequences out of 15000+600000
+ 13242 strings out of 476334
+ 215613 string characters out of 5793018
+ 1959493 words of memory out of 5000000
+ 35083 multiletter control sequences out of 15000+600000
  562720 words of font info for 52 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 79i,14n,93p,931b,619s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 79i,14n,93p,931b,615s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </home/hatem/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk></home/hatem/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/hatem/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></home/hatem/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></home/hatem/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/hatem/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi5.pfb></home/hatem/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi7.pfb></home/hatem/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/hatem/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/hatem/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/hatem/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/hatem/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsl10.pfb></home/hatem/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/hatem/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb></home/hatem/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Portfolio.pdf (12 pages, 232703 bytes).
+Output written on Portfolio.pdf (15 pages, 251725 bytes).
 PDF statistics:
- 237 PDF objects out of 1000 (max. 8388607)
- 72 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 288 PDF objects out of 1000 (max. 8388607)
+ 100 named destinations out of 1000 (max. 500000)
+ 49 words of extra memory for PDF output out of 10000 (max. 10000000)
 

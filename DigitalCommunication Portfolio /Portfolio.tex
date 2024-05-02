@@ -21,9 +21,12 @@
 % Question command
 %
 \newcounter{question}
+\makeatletter
+\@addtoreset{question}{section} % reset question counter at every section
+\makeatother
 \newcommand*\question{%
 \stepcounter{question}%
-\paragraph{Question \thequestion}}
+\paragraph{Question \thesection.\thequestion}}
 
 % ==============================================================================
 % AnsweR_boxes
@@ -354,33 +357,29 @@ P(nT_b) = \delta(n) \quad \text{for} \quad \text{sinc}(t/T_b)
 \begin{answer_box*}
     To calculate the minimum bandwidth required for a PCM system with a sampling rate of $f_s = 8 \text{ kHz}$ and $N = 256$ quantization levels, we can use the formula:
 
-    $$BW = 2B = 2 \cdot (1 + \alpha) \cdot R$$
+    \begin{equation}
+    BW = 2B = 2 \cdot (1 + \frac{79688}{10^6}) \cdot R
+    \end{equation}
     
     where $B$ is the bandwidth, $\alpha$ is the excess bandwidth factor, and $R$ is the bit rate.
     
     The bit rate for a PCM system can be calculated as:
     
-    $$R = \log_2(N) \cdot f_s$$
+    \begin{equation}
+    R = \log_2(N) \cdot f_s
+    \end{equation}
     
     Substituting the given values, we get:
     
-    $$R = \log_2(256) \cdot 8 \text{ kHz} = 16 \text{ kbps}$$
-    
-    The excess bandwidth factor for a PCM system is given by:
-    
-    $$-\frac{1}{\alpha} = N^2 \cdot R$$
-    
-    Substituting the given values, we get:
-    
-    $$-\frac{1}{\alpha} = (256)^2 \cdot 16 \text{ kbps}$$
-    
-    Solving for $\alpha$, we get:
-    
-    $$\alpha = -\frac{1}{(256^2 \cdot 16 \text{ kbps})} = \frac{79688}{10^6}$$
+    \begin{equation}
+    R = \log_2(256) \cdot 8 \text{ kHz} = 16 \text{ kbps}
+    \end{equation}
     
     Therefore, the minimum bandwidth required for the telephone system using PCM is:
     
-    $$BW = 2B = 2 \cdot (1 + \frac{79688}{10^6}) \cdot 16 \text{ kbps} = 35200 \text{ Hz}$$
+    \begin{equation}
+    BW = 2B = 2 \cdot (1 + \frac{79688}{10^6}) \cdot 16 \text{ kbps} = 35200 \text{ Hz}
+    \end{equation}
     
     So the minimum bandwidth needed is $35200 \text{ Hz}$.
 
@@ -475,12 +474,10 @@ Using the definition of the raised cosine function, we can write each term on th
 
 Substituting these expressions into the left-hand side, we get:
 
-\begin{equation}
-    P_RC (f +R_b ) + P_RC (f ) + P_RC (f -R_b ) = 
-    \frac{1}{2}\left[\text{sinc}\left(\frac{f +R_b }{2Rc}\right) + \text{sinc}\left(\frac{f +R_b }{2Rc} - 1\right) + 
-    \text{sinc}\left(\frac{f }{2Rc}\right) + \text{sinc}\left(\frac{f }{2Rc} - 1\right) + 
-    \text{sinc}\left(\frac{f - R_b }{2Rc}\right) + \text{sinc}\left(\frac{f - R_b }{2Rc} - 1\right)\right]    
-\end{equation}
+        $$P_RC (f +R_b ) + P_RC (f ) + P_RC (f -R_b ) =$$
+        $$\frac{1}{2}\text{sinc}\left(\frac{f +R_b }{2Rc}\right) + \text{sinc}\left(\frac{f +R_b }{2Rc} - 1\right) + $$ 
+        $$\text{sinc}\left(\frac{f }{2Rc}\right) + \text{sinc}\left(\frac{f }{2Rc} - 1\right) + $$
+        $$\text{sinc}\left(\frac{f - R_b }{2Rc}\right) + \text{sinc}\left(\frac{f - R_b }{2Rc} - 1\right)    $$
 
 Simplifying further, we get:
 
@@ -493,12 +490,10 @@ Simplifying further, we get:
 Step 2: Substitute into the original equation
 
 Substituting the simplified expression for the left-hand side into the original equation, we get:
-\begin{equation}
-    \left[\text{sinc}\left(\frac{f }{2Rc}\right) + \left[\text{sinc}\left(\frac{f +R_b }{2Rc}\right) + \text{sinc}\left(\frac{f -R_b }{2Rc}\right)\right]\right] 
-    \left[\text{sinc}\left(\frac{f +R_b }{2Rc}\right) + \text{sinc}\left(\frac{f -R_b }{2Rc}\right)\right] + 
-    \left[\text{sinc}\left(\frac{f + R_b }{2Rc}\right) + \text{sinc}\left(\frac{f - R_b }{2*Rc}\right) - T_b \right] = 0
-\end{equation}
 
+    $$\left[\text{sinc}\left(\frac{f }{2Rc}\right) + \left[\text{sinc}\left(\frac{f +R_b }{2Rc}\right) + \text{sinc}\left(\frac{f -R_b }{2Rc}\right)\right]\right] $$    
+    $$\left[\text{sinc}\left(\frac{f +R_b }{2Rc}\right) + \text{sinc}\left(\frac{f -R_b }{2Rc}\right)\right] + $$
+    $$\left[\text{sinc}\left(\frac{f + R_b }{2Rc}\right) + \text{sinc}\left(\frac{f - R_b }{2*Rc}\right) - T_b \right] = 0$$
 
 Step 3: Simplify
 
@@ -507,9 +502,9 @@ Simplifying further, we get:
     \text{sinc}\left(\frac{f }{2Rc}\right) + \text{sinc}\left(\frac{f + R_b }{2Rc}\right) + \text{sinc}\left(\frac{f - R_b }{2*Rc}\right) = \frac{T_b }{2}
 \end{equation}
 
-$Step 4: Check for all f in the range -R_b /2, R_b /2$
+Step 4: Check for all f in the range $-R_b /2, R_b /2$
 
-$We need to check if this equation holds for all f in the range -R_b /2, R_b /2. We can start by considering the case when f = 0:$
+We need to check if this equation holds for all f in the range $-R_b /2, R_b /2$, We can start by considering the case when $f = 0:$
 
 \begin{equation}
     \text{sinc}(0) + \text{sinc}\left(\frac{R_b }{2Rc}\right) + \text{sinc}\left(-\frac{R_b }{2Rc}\right) = \frac{T_b }{2}
@@ -533,7 +528,7 @@ Now we need to check if this equation holds for all values of $R_b /(2Rc)$ in th
 
 \question
 {
-    $P_RC (f )$ exhibits odd symmetry with respect to $f = \frac{1}{2T_{b}} $. Verify odd symmetry.
+    $P_RC (f )$ exhibits odd symmetry with respect to $f = \frac{1}{2T_{b}}$. Verify odd symmetry.
 }
 \begin{answer_box*}
 
@@ -586,23 +581,216 @@ Now we need to check if this equation holds for all values of $R_b /(2Rc)$ in th
 
 \question
 {
+    Prove the $P_RC$ in time domain?
 }
 \begin{answer_box*}
 \end{answer_box*}
 
 \question
 {
+    find $t_0$ such that $P_RC (t - t_0 ) < 0.001\ for\ t < 0$ ?
 }
 \begin{answer_box*}
+    Since we are interested in finding $t_0$ such that $P_{RC}(t-t_0) < 0.001$ for $t<0$, we can restrict our attention to the range $t\in[-t_0,0]$. Therefore, we need to find $t_0$ such that:
+
+\begin{equation}
+    P_{RC}(t-t_0) < 0.001, \quad \text{for } -t_0 \leq t \leq 0
+\end{equation}
+
+Using the expression for $P_{RC}(t-t_0)$, we can rewrite the above inequality as:
+
+\begin{equation}
+    1 + \cos\left(\frac{\pi(t-t_0)}{T_b}\right) < 0.001, \quad \text{for } -t_0 \leq t \leq 0
+\end{equation}
+
+Since $\cos(\theta) \leq 1$ for all $\theta$, we can simplify the above inequality to:
+
+\begin{equation}
+    \frac{1}{T_b} < 0.001, \quad \text{for } -t_0 \leq t \leq 0
+\end{equation}
+
+which implies that
+
+\begin{equation}
+    t_0 > 1000T_b.
+\end{equation}
+
+Therefore, if we shift the raised cosine pulse to the right by $t_0 > 1000T_b$, then the pulse will satisfy $P_{RC}(t-t_0) < 0.001$ for $t<0$.
 \end{answer_box*}
 
 \question
 {
+    verify orthogonality of SRRC ?
+}
+\begin{answer_box*}
+We aim to prove that the orthogonality of SRRC pulses is given by the fact that the integral of their product over the real line is zero for all non-zero $n$:
+
+
+\begin{equation}
+    \int_{-\infty}^{\infty} g_T(t)g_T(t-nT_b)dt = 0 \quad \text{for all } n \neq 0
+\end{equation}
+
+
+Substituting $g_T(t)$ and $g_T(t-nT_b)$ into the integral, we get:
+
+
+\begin{equation}
+\int_{-\infty}^{\infty} g_T(t)g_T(t-nT_b)dt = \int_{-\infty}^{\infty} \sin\left(\frac{\pi t}{T_b}\right)\cos\left(\frac{\pi \alpha t}{T_b}\right)\sin\left(\frac{\pi(t-nT_b)}{T_b}\right)\cos\left(\frac{\pi \alpha(t-nT_b)}{T_b}\right)dt
+\end{equation}
+
+$$=\frac{1}{4}\int_{-\infty}^{\infty} \cos\left(\frac{\pi(t-u)}{T_b}\right)-\cos\left(\frac{\pi(t+u)}{T_b}\right)du$$
+$$\times\left[\left(\frac{\pi(t-u)}{T_b}\right)^2-\pi^2\alpha^2\right]\left[\left(\frac{2\alpha(t-u)}{T_b}\right)^2-1\right]+\frac{1}{4}\int_{-\infty}^{\infty} \cos\left(\frac{\pi(t-u)}{T_b}\right)+\cos\left(\frac{\pi(t+u)}{T_b}\right)du$$
+$$\times\left[\left(\frac{\pi(t-u)}{T_b}\right)^2-\pi^2\alpha^2\right]\left[\left(\frac{2\alpha(t+u)}{T_b}\right)^2-1\right]$$
+
+Substituting $u=t-nT_b$, we get:
+
+$$\int_{-\infty}^{\infty} g_T(t)g_T(t-nT_b)dt = \frac{1}{4}\int_{-\infty}^{\infty} \cos\left(\frac{\pi u}{T_b}\right)-\cos\left(\frac{\pi(u+2nT_b)}{T_b}\right)du$$
+$$\times\left[\left(\frac{\pi u}{T_b}\right)^2-\pi^2\alpha^2\right]\left[\left(\frac{2\alpha u}{T_b}\right)^2-1\right]+\frac{1}{4}\int_{-\infty}^{\infty} \cos\left(\frac{\pi u}{T_b}\right)+\cos\left(\frac{\pi(u+2nT_b)}{T_b}\right)du$$
+$$\times\left[\left(\frac{\pi u}{T_b}\right)^2-\pi^2\alpha^2\right]\left[\left(\frac{2\alpha(u+2nT_b)}{T_b}\right)^2-1\right]$$
+
+The first integral is zero because the integrand is an odd function of $u$. The second integral is also zero because the integrand is an even function of $u$ and the limits of integration are symmetric around $u=0$.
+
+Therefore, we have shown that the integral of the product of two SRRC pulses, $g_T(t)$ and $g_T(t-nT_b)$, over the entire real line is zero for all $n\neq 0$. This proves that SRRC pulses are orthogonal to each other.
+\end{answer_box*}
+
+\question
+{
+    If $g_T (t)$ is delayed by multiples of $T_b$ , then the area of multiplication = 0. Why is this important for detection?
+}
+\begin{answer_box*}
+\begin{itemize}
+    \item The property that the area of multiplication is zero when the filter impulse response $g_T (t)$ is delayed by multiples of the symbol period $T_b$ is crucial for detection because it prevents inter-symbol interference (ISI).
+
+    \item ISI occurs when symbols from adjacent time intervals overlap in time, causing distortion in the received signal. By ensuring that the area of multiplication is zero for delays that are multiples of T b , we effectively eliminate ISI.
+    
+    \item This is achieved by shifting the filter to a different time interval where it has no overlap with adjacent symbols. As a result, each symbol is sampled at a time when it has no interference from neighboring symbols, making it easier to detect correctly.
+\end{itemize}
+\end{answer_box*}
+
+\question
+{
+    What is the maximum bit rate for any pulse?
+}
+\begin{answer_box*}
+    $R_b = 2W$
+\end{answer_box*}
+
+\question
+{
+    Plot T.D \& F.D pulse using MATLAB
 }
 \begin{answer_box*}
 \end{answer_box*}
+\question
+{
+    How do we know that there wont be any uncontrolled ISI in addition to ISI from $a_{k-1}$ ?
+}
+\begin{answer_box*}
+    \begin{itemize}
+        \item To prevent uncontrolled inter-symbol interference (ISI) beyond that caused by the previous symbol (k-1), the pulse shape and system bandwidth must be carefully designed.
 
+        \item The pulse shape should be selected to eliminate ISI at the decision points and minimize energy outside the decision window. This ensures that ISI from adjacent symbols is negligible.
+        
+        \item Therefore, the system bandwidth should be limited to prevent frequency-dependent attenuation of the transmission medium from causing ISI. This ensures that symbols are transmitted with minimal distortion and that ISI from distant symbols is also minimized.
+    \end{itemize}
+\end{answer_box*}
+\question
+{
+    How $\hat{a}_k = x_k - \hat{a}_{k-1}$ is equivalent to :    
+\begin{equation}
+    \hat{a}_k =
+    \begin{cases}
+        -1             &\text{if } x_k = -2 \\
+        1              &\text{if } x_k =  2 \\
+        -\hat{a}_{k-1} &\text{if } x_k =  0
+    \end{cases}
+\end{equation}
+
+    
+}
+\begin{answer_box*}
+\begin{itemize}
+    \item  When $x_k = -2$: Substituting $x_k = -2$ into the equation gives $\hat{a}_k = -2 - \hat{a}_{k-1}$, from the definition of $\hat{a}_k$ in the original equation, we have $\hat{a}_k = -1$, so substituting this value gives $\hat{a}_{k-1} = -2 - (-1) = -1$. Therefore, we have $\hat{a}_k = -1$ for $x_k = -2$.
+    \item  When $x_k = 2$: Substituting $x_k = 2$ into the equation gives $\hat{a}_k = 2 - \hat{a}_{k-1}$, from the definition of $\hat{a}_k$ in the original equation, we have $\hat{a}_k = 1$, so substituting this value gives $\hat{a}_{k-1} = 2 - 1 = 1$. Therefore, we have $\hat{a}_k = 1$ for $x_k = 2$.
+    \item When $x_k = 0$: Substituting $x_k = 0$ into the equation gives $\hat{a}_k = 0 - \hat{a}_{k-1}$, which can be rewritten as $\hat{a}_k = -\hat{a}_{k-1}$. Therefore, we have $\hat{a}_k = -\hat{a}_{k-1}$ for $x_k = 0$.  
+\end{itemize}
+\end{answer_box*}
+\question
+{
+    Would detection differ if $w_0 = 1$?
+}
+\begin{answer_box*}
+    No, since the duobinary sequence will be inverted but detection is the same of binary input data
+\end{answer_box*}
+
+\question
+{
+    Another version of correlative encoding is called modified duobinary, where
+    \begin{equation}
+        \begin{cases}
+        P (n {T}_b) &= -1 \quad \text{if } n = 0 \quad \text{Repeat the analysis \& find P (t), P (f ). Explain why it is preferrable} \\
+        P (n {T}_b) &= 1 \quad \text{if } n = 0 \\
+        P (n {T}_b) &= 0 \quad \text{otherwise} 
+        \end{cases}
+    \end{equation}
+    in channels that doesnt pass DC levels.
+}
+\begin{answer_box*}
+
+    Modified duobinary encoding is a type of correlative encoding that modifies the duobinary encoding scheme. 
+    Specifically, it changes the polarity of the -1 symbol.\\
+    The autocorrelation function of the modified duobinary signal is given by:
+\begin{equation}
+    R(\tau ) = \int_{-\infty}^{\infty} P (t)P (t - \tau )dt
+\end{equation}
+
+where,
+
+\begin{equation}
+    R(\tau ) = \int_{-\infty}^{\infty} P (t)P (t)dt + \int_{-\infty}^{\infty} P (t)P (t - \tau )dt \\
+     = T_b + (-1)^{\frac{\tau}{T_b}}T_b \\
+\end{equation}
+
+\begin{equation}
+    \begin{cases}
+        \frac{1}{2} & \text{if } t = 0 \\
+        \frac{1}{4} & \text{if } t = \pm T_b \\
+        0 & \text{otherwise.}
+    \end{cases}
+\end{equation}
+
+\begin{equation}
+    F (f ) = \left(\frac{1}{2} + \frac{3}{4} e^{-j2\pi f T b } + \frac{1}{4} e^{j2\pi f T b}\right).
+\end{equation}
+
+\begin{equation}
+    S(f) = |F(f)|^2 = \frac{1}{2} \left(1 + \cos(2\pi fT_b)\right)
+\end{equation}
+
+By comparing this with the PSD of the standard duobinary signal, we can see that the modified duobinary signal has a wider bandwidth. This is due to the presence of a DC component in the modified duobinary signal.
+Therefore, the modified duobinary signal is preferable in channels that do not pass DC levels. This is because the wider bandwidth of the modified duobinary signal will allow it to pass through channels that do not pass DC levels more easily.
+
+\end{answer_box*}
 % ========================== end Question of Note 2===============================
+% --------------------------------------------------------------------------------
+% ========================== start Question of Note 3===============================
+% --------------------------------------------------------------------------------
+\section{Note 3}
+\question
+{
+}
+\begin{answer_box*}
+\end{answer_box*}
+
+\question
+{
+}
+\begin{answer_box*}
+\end{answer_box*}
+
+
+
+% ========================== end Question of Note 3===============================
 % --------------------------------------------------------------------------------
 
 % ==============================================================================
