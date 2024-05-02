@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1714680787.07751 "/home/hatem/Latex_projects/DigitalCommunication Portfolio /Portfolio.tex" "Portfolio.pdf" "Portfolio" 1714680787.86897 0
+["pdflatex"] 1714694269.36802 "/home/hatem/Latex_projects/DigitalCommunication Portfolio /Portfolio.tex" "Portfolio.pdf" "Portfolio" 1714694271.06243 0
   "/home/hatem/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map" 1714587400.75343 25678 aa7c8fd3909e804e7d85441c21595406 ""
   "/home/hatem/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1714589086.5231 11548 70f6cb6e6a312fab7e828bf82cc39302 ""
   "/home/hatem/.miktex/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt" 1714582599.32279 21110979 7f3652095d9c1e23e78124c3869af59b ""
@@ -99,11 +99,11 @@
   "/home/hatem/.miktex/texmfs/install/tex/latex/xcolor/xcolor.sty" 1714584773.87961 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "/home/hatem/.miktex/texmfs/install/tex/latex/zref/zref-abspage.sty" 1714584829.20334 2269 4fe6fb3396214c91f164d45faf9bec45 ""
   "/home/hatem/.miktex/texmfs/install/tex/latex/zref/zref-base.sty" 1714584829.20334 20785 f7d1133a287929598a897c93f8f4c44b ""
-  "/home/hatem/Latex_projects/DigitalCommunication Portfolio /Portfolio.tex" 1714680785.51389 31306 3fcad41c45738d0d56893a006f4494c0 ""
-  "Portfolio.aux" 1714680787.73789 5035 e9ce426437a3af9ff3aeb615acbc4b72 "pdflatex"
-  "Portfolio.out" 1714680787.73789 841 65767f64c4e6db94460d0e2212293876 "pdflatex"
-  "Portfolio.tex" 1714680785.51389 31306 3fcad41c45738d0d56893a006f4494c0 ""
-  "Portfolio.toc" 1714680787.73789 2510 0a1c6b6e7c3855b844274f0b3c14f11e "pdflatex"
+  "/home/hatem/Latex_projects/DigitalCommunication Portfolio /Portfolio.tex" 1714694268.32581 48715 2aabbd7d9e636aeaacdffd0e1ba0d5d8 ""
+  "Portfolio.aux" 1714694270.85386 6961 fabed0e0870e3ac64abe7524364939a2 "pdflatex"
+  "Portfolio.out" 1714694270.85786 841 65767f64c4e6db94460d0e2212293876 "pdflatex"
+  "Portfolio.tex" 1714694268.32581 48715 2aabbd7d9e636aeaacdffd0e1ba0d5d8 ""
+  "Portfolio.toc" 1714694270.85786 3657 88f4fc2bf04004147d18a826051d98a1 "pdflatex"
   (generated)
   "Portfolio.aux"
   "Portfolio.log"

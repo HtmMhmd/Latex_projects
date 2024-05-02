@@ -638,15 +638,19 @@ Substituting $g_T(t)$ and $g_T(t-nT_b)$ into the integral, we get:
 \int_{-\infty}^{\infty} g_T(t)g_T(t-nT_b)dt = \int_{-\infty}^{\infty} \sin\left(\frac{\pi t}{T_b}\right)\cos\left(\frac{\pi \alpha t}{T_b}\right)\sin\left(\frac{\pi(t-nT_b)}{T_b}\right)\cos\left(\frac{\pi \alpha(t-nT_b)}{T_b}\right)dt
 \end{equation}
 
-$$=\frac{1}{4}\int_{-\infty}^{\infty} \cos\left(\frac{\pi(t-u)}{T_b}\right)-\cos\left(\frac{\pi(t+u)}{T_b}\right)du$$
-$$\times\left[\left(\frac{\pi(t-u)}{T_b}\right)^2-\pi^2\alpha^2\right]\left[\left(\frac{2\alpha(t-u)}{T_b}\right)^2-1\right]+\frac{1}{4}\int_{-\infty}^{\infty} \cos\left(\frac{\pi(t-u)}{T_b}\right)+\cos\left(\frac{\pi(t+u)}{T_b}\right)du$$
-$$\times\left[\left(\frac{\pi(t-u)}{T_b}\right)^2-\pi^2\alpha^2\right]\left[\left(\frac{2\alpha(t+u)}{T_b}\right)^2-1\right]$$
+\begin{align}
+    &= \frac{1}{4}\int_{-\infty}^{\infty} \cos\left(\frac{\pi(t-u)}{T_b}\right)-\cos\left(\frac{\pi(t+u)}{T_b}\right)du \\
+    &= \left[\left(\frac{\pi(t-u)}{T_b}\right)^2-\pi^2\alpha^2\right]\left[\left(\frac{2\alpha(t-u)}{T_b}\right)^2-1\right]+\frac{1}{4}\int_{-\infty}^{\infty} \cos\left(\frac{\pi(t-u)}{T_b}\right)+\cos\left(\frac{\pi(t+u)}{T_b}\right)du \\
+    &= \left[\left(\frac{\pi(t-u)}{T_b}\right)^2-\pi^2\alpha^2\right]\left[\left(\frac{2\alpha(t+u)}{T_b}\right)^2-1\right]
+\end{align}
 
 Substituting $u=t-nT_b$, we get:
 
-$$\int_{-\infty}^{\infty} g_T(t)g_T(t-nT_b)dt = \frac{1}{4}\int_{-\infty}^{\infty} \cos\left(\frac{\pi u}{T_b}\right)-\cos\left(\frac{\pi(u+2nT_b)}{T_b}\right)du$$
-$$\times\left[\left(\frac{\pi u}{T_b}\right)^2-\pi^2\alpha^2\right]\left[\left(\frac{2\alpha u}{T_b}\right)^2-1\right]+\frac{1}{4}\int_{-\infty}^{\infty} \cos\left(\frac{\pi u}{T_b}\right)+\cos\left(\frac{\pi(u+2nT_b)}{T_b}\right)du$$
-$$\times\left[\left(\frac{\pi u}{T_b}\right)^2-\pi^2\alpha^2\right]\left[\left(\frac{2\alpha(u+2nT_b)}{T_b}\right)^2-1\right]$$
+\begin{align}
+    & \int_{-\infty}^{\infty} g_T(t)g_T(t-nT_b)dt = \frac{1}{4}\int_{-\infty}^{\infty} \cos\left(\frac{\pi u}{T_b}\right)-\cos\left(\frac{\pi(u+2nT_b)}{T_b}\right)du\\
+    & = \left[\left(\frac{\pi u}{T_b}\right)^2-\pi^2\alpha^2\right]\left[\left(\frac{2\alpha u}{T_b}\right)^2-1\right]+\frac{1}{4}\int_{-\infty}^{\infty} \cos\left(\frac{\pi u}{T_b}\right)+\cos\left(\frac{\pi(u+2nT_b)}{T_b}\right)du\\
+    & = \left[\left(\frac{\pi u}{T_b}\right)^2-\pi^2\alpha^2\right]\left[\left(\frac{2\alpha(u+2nT_b)}{T_b}\right)^2-1\right] 
+\end{align}
 
 The first integral is zero because the integrand is an odd function of $u$. The second integral is also zero because the integrand is an even function of $u$ and the limits of integration are symmetric around $u=0$.
 
@@ -778,18 +782,320 @@ Therefore, the modified duobinary signal is preferable in channels that do not p
 \section{Note 3}
 \question
 {
+    If $H_c(f)$ is a non-distorting channel, do we need an equalizer?
 }
 \begin{answer_box*}
+    A non-distorting channel with a flat frequency response does not require an equalizer as it transmits the signal without distortion or attenuation. However, if the non-distorting channel has a frequency-dependent gain, an equalizer may be necessary to correct for the gain variation and ensure the signal's fidelity.
 \end{answer_box*}
 
 \question
 {
+    What is a Decision Feedback Equalizer (DFE)?
 }
 \begin{answer_box*}
+In a dispersive channel, a Decision Feedback Equalizer (DFE) uses feedback from the receiver's decision circuit to adaptively adjust its taps and remove Inter-Symbol Interference (ISI). ISI occurs when a symbol interferes with adjacent symbols due to the channel's varying gain and phase response with frequency.
+
+The DFE consists of a feedforward filter for traditional equalization and a feedback filter to remove residual ISI. The feedback signal is obtained by delaying the received signal and multiplying it by the receiver's decision. This signal is then subtracted from the input to the equalizer.
+
+The DFE adapts the feedback filter's tap coefficients using an adaptive algorithm, such as LMS or RLS, to minimize the error between the received signal and the decision feedback signal. This adaptive adjustment effectively compensates for ISI.
+
+DFE provides excellent performance in dispersive channels with significant ISI. However, it has a more complex implementation and higher computational complexity compared to other equalization techniques.
 \end{answer_box*}
 
+\question
+{
+    Why is this equation $y_n = \sum_(k=-L_2)^(P) k a_n-k + n^e$ exactly the same as $y_n = \sum_(k=-L_2)^(L_1) a_k P_(n-k) + n^e$?
+}
+\begin{answer_box*}
+    Both equations represent the convolution of an FIR filter with an input signal, where:
+
+\begin{itemize}
+        \item $y_n$ is the output of the filter at time n
+        \item $x_n$ is the input signal at time n
+        \item $a_k$ is the filter coefficient at tap k
+        \item $L_1$ and $L_2$ are the lower and upper limits of the filter taps, respectively
+        \item $e_n$ is any additive noise present in the signal
+\end{itemize}
+
+The two equations are equivalent and can be used interchangeably. The choice of which equation to use depends on the specific application or context in which the filter is being used. For example, if the input signal is known in advance and the filter coefficients are being determined, Equation 2 may be more useful. Conversely, if the filter coefficients are known and the input signal is being processed, Equation 1 may be more convenient.
+\end{answer_box*}
+
+\question
+{
+    What is pseudonoise (PN) sequence? describe its generation \& autocorrelation function ?
+}
+\begin{answer_box*}
+    \begin{itemize}
+        \item \textbf {Pseudonoise (PN) Sequence}:
+    
+        A pseudonoise (PN) sequence is a deterministic sequence of binary values that appears random. PN sequences are used in various applications, including digital communications, cryptography, and radar.
+    
+        \item \textbf {Generation}:
+    
+        PN sequences are generated using linear feedback shift registers (LFSRs). An LFSR consists of a shift register with feedback taps connected to an XOR gate. The feedback taps are chosen based on the desired length and properties of the PN sequence.
+    
+        \item \textbf {Autocorrelation Function}:
+    
+        The autocorrelation function of a PN sequence is given by:
+    
+        \begin{equation}
+        R(\tau) \equiv 
+        \begin{cases}
+        N,     & \text{if } \tau=0 \\
+        0,     & \text{if } \tau \neq 0
+        \end{cases}
+        \end{equation}
+        where:
+
+        \begin{itemize}
+            \item  {N is the length of the PN sequence}
+            \item  {$\tau$ is the time delay between two subsequences of the PN sequence}
+        \end{itemize}
+        The autocorrelation function shows that a PN sequence is uncorrelated with itself at any time delay except for zero. This property makes PN sequences useful for applications where random-like signals are required.
+    
+    \end{itemize}\end{answer_box*}
+
+\question
+{
+    What is the importance of using a sequence with ACF similar to noise ACF (i.e,delta function)?
+}
+\begin{answer_box*}
+Using a pseudonoise (PN) sequence with an ideal autocorrelation function (i.e., a maximum-length sequence) in a communication system can improve the system's performance in terms of noise immunity and spectral efficiency.
+
+\textbf{Noise Immunity}
+When a PN sequence is used as a spreading code in a direct-sequence spread spectrum (DSSS) system, the signal is spread out over a wide frequency band. This makes it more difficult for an eavesdropper or a jammer to selectively interfere with the signal, because any interference will be spread out over the entire band. Additionally, the PN sequence can be regenerated at the receiver using the same feedback polynomial as the transmitter, which provides a means of despreading the signal and recovering the original data in the presence of noise.
+
+\textbf{Spectral Efficiency}
+The use of a PN sequence with an ideal autocorrelation function allows the signal to spread out over a wider bandwidth, which increases the system's spectral efficiency. This is because the sequence is uncorrelated with itself at any time delay except for a delay of zero. This property allows the signal to occupy a wider bandwidth without causing intersymbol interference.
+\end{answer_box*}
+
+\question
+{
+    Complete the steps of integral ${\sigma_{n}}^2 = N_0 (1 + x^2 ){\cos^2}(\pi x/2)dx$?
+}
+\begin{answer_box*}
+    To complete the steps of the integral ${\sigma_{n}}^2 = N_0(1 + x^2){\cos^2}(\pi x/2)dx$, follow these steps:
+
+    \begin{equation}\sigma^2 = N_0\left(\frac{5}{6} - \frac{2}{\pi^2}\right)\end{equation}
+
+    where:
+
+    \begin{align}
+    \int_0^1 \frac{1}{2}(1 + x^2)dx &= \frac{5}{6} \tag{1}\\
+    \int_0^1 \frac{1}{2}(1 + x^2)\cos(\pi x)dx &= -\frac{2}{\pi^2} \tag{2}
+    \end{align}
+
+    \begin{itemize}
+        \item (1) Integrate by parts:
+        \begin{align}\int_0^1 \frac{1}{2}(1 + x^2)dx &= \left[\frac{x}{2} + \frac{x^3}{6}\right]_0^1 = \frac{5}{6}\end{align}
+        \item (2) Integrate by parts:
+        \begin{align}\int_0^1 \frac{1}{2}(1 + x^2)\cos(\pi x)dx &= \left[-\frac{1}{2}(1 + x^2)\sin(\pi x)\right]_0^1 - \frac{1}{\pi}\int_0^1 \pi x \sin(\pi x)dx \end{align}
+        \begin{align}-\int_0^1 \pi x \sin(\pi x)dx &= \left[-\frac{x\sin(\pi x)}{\pi}\right]_0^1 + \frac{1}{\pi^2}\int_0^1 \cos(\pi x)dx \end{align}
+        \begin{align}-\int_0^1 \cos(\pi x)dx &= \left[\frac{1 - \cos(\pi x)}{(\pi)^2}\right]_0^1 = \frac{1}{\pi^2}\end{align}
+    \end{itemize}
+
+    Therefore, the final result is:
+
+    \begin{equation}\sigma^2 = N_0\left(\frac{5}{6} - \frac{2}{\pi^2}\right)\end{equation}
+
+\end{answer_box*}
+
+\question
+{
+    What is the advantage of having $\tau < T_b$?
+}
+\begin{answer_box*}
+    Having $\tau < T_b$ in a ZF equalizer has the following advantages:
+
+\begin{itemize}
+    \item {\textbf{Better performance in frequency-selective channels:}} By having a tap spacing less than $T_b$, the ZF equalizer can better capture the multi-path components of the channel and reduce ISI to a greater extent, resulting in better performance in frequency-selective channels.
+    \item {\textbf{Improved noise rejection:}} The ZF equalizer can better distinguish between noise and signal components that arrive at different delays when the tap spacing is less than $T_b$, allowing it to better reject noise and improve the signal-to-noise ratio (SNR) of the received signal.
+    \item {\textbf{Lower computational complexity:}} The smaller tap spacing allows each tap to have a shorter impulse response, which leads to lower computational complexity in the equalizer.
+\end{itemize}
+\end{answer_box*}
+
+\question
+{
+    Why we dont write for $n \neq 0$ ?
+}
+\begin{answer_box*}
+    As we have N taps only, so the total is (2N + 1).
+\end{answer_box*}
+
+\question
+{
+    \[
+    q(nT_b) = \sum_{m=-2}^2 c_m P(nT_b - mT_{2b}) =
+     \begin{cases}
+    1 & \text{if } n = 0 \\
+    0 & \text{if } n = \pm 1 , \pm 2 
+    \end{cases}
+    \] write explicit equations?
+}
+\begin{answer_box*}
+    For $n = 0$, we have:
+    \begin{equation}
+        q(0) = c_{-2}P(-\frac{T_{b}}{2}) + c_{-1}P(-\frac{T_{b}}{2}) + c_0P(0) + c_1P(-\frac{T_{b}}{2}) + c_2P(-T_{b}) = 1
+    \end{equation}
+
+    For $n = 1$, we have:
+    \begin{equation}
+        q(T_b) = c_{-2}P(\frac{T_{b}}{2}) + c_{-1}P(T_{b}) + c_0P(-\frac{T_{b}}{2}) + c_1P(-\frac{T_{b}}{2}) + c_2P(-T_{b}) = 0
+    \end{equation}
+
+    For $n = -1$, we have:
+    \begin{equation}
+        q(T_b) = c_{-2}P(\frac{T_{b}}{2}) + c_{-1}P(- T_{b}) + c_0P(\frac{T_{b}}{2}) + c_1P(\frac{T_{b}}{2}) + c_2P(-T_{b}) = 0
+    \end{equation}
+
+    For $n = 2$, we have:
+    \begin{equation}
+        q(T_b) = c_{-2}P(\frac{T_{b}}{2}) + c_{-1}P(2T_{b}) + c_0P(-\frac{T_{b}}{2}) + c_1P(-\frac{T_{b}}{2}) + c_2P(-2T_{b}) = 0
+    \end{equation}
+
+    For $n = -2$, we have:
+    \begin{equation}
+        q(T_b) = c_{-2}P(\frac{T_{b}}{2}) + c_{-1}P(-2T_{b}) + c_0P(\frac{T_{b}}{2}) + c_1P(\frac{T_{b}}{2}) + c_2P(-2T_{b}) = 0
+    \end{equation}
+\end{answer_box*}
+
+\question
+{
+    What is Toeplitz matrix ? 
+}
+\begin{answer_box*}
+A Toeplitz matrix is a square matrix in which the elements along each diagonal from the main diagonal to the secondary diagonals are constant. In other words, the elements of a Toeplitz matrix are constant along its antidiagonals.
 
 
+\begin{equation}
+\begin{bmatrix}
+a_0 & a_1 & a_2 & \cdots & a_{n-1} \\
+a_{-1} & a_0 & a_1 & \cdots & a_{n-2} \\
+a_{-2} & a_{-1} & a_0 & \cdots & a_{n-3} \\
+\vdots & \vdots & \vdots & \ddots & \vdots \\
+a_{-(n-1)} & a_{-(n-2)} & a_{-(n-3)} & \cdots & a_0
+\end{bmatrix}
+\end{equation}
+where $a_i$ is the constant value of the $i$th diagonal.
+
+\end{answer_box*}
+
+\question
+{
+    What about $q(3T_b )$?
+}
+\begin{answer_box*}
+
+$$q(3T_b) = c_{-1}P(4T_b) + c_0P(3T_b) + c_1P(2T_b)$$
+
+Since no response is given for P(4T b ) \& P(3T b ), we can consider them zero:
+
+$$q(3T_b) = c_1P(2T_b) = 0.1 * 0.3448 = 0.03448$$
+\end{answer_box*}
+
+\question
+{
+
+}
+\begin{answer_box*}
+    Expanded expression:
+
+    $$\sum_m\sum_k{c_m,c_k \in \{-1, 0, 1\}} c_m c_k Ry(k - m) =$$
+
+    $$c_{-1} c_{-1} R_y(-1 - (-1)) + c_{-1} c_0 R_y(0 - (-1)) + c_{-1} c_1 R_y(1 - (-1)) +$$
+
+    $$c_0 c_{-1} R_y(-1 - 0) + c_0 c_0 R_y(0 - 0) + c_0 c_1 R_y(1 - 0) +$$
+
+    $$c_1 c_{-1} R_y(-1 - 1) + c_1 c_0 R_y(0 - 1) + c_1 c_1 R_y(1 - 1)$$
+
+    Simplified expression:
+
+    $$= c_{-1} c_{-1} R_y(0) + c_{-1} c_0 R_y(1) + c_{-1} c_1 R_y(2) +$$
+
+    $$c_0 c_{-1} R_y(-1) + c_0 c_0 R_y(0) + c_0 c_1 R_y(1) +c_1 c_{-1} R_y(-2) + c_1 c_0 R_y(-1) + c_1 c_1 R_y(0)$$
+\end{answer_box*}
+
+\question
+{
+    What happens if $\mu$ is large?
+}
+\begin{answer_box*}
+    at $\mu {\rightarrow}\infty \implies$ :
+\begin{itemize}
+    \item \textbf{Overshooting the Minimum}:  Algorithm overshoots minimum, leading to divergence.
+    
+    \item \textbf{Divergence}: Loss function increases or oscillates without convergence.
+        
+    \item \textbf{Slow Convergence or Oscillation}: Algorithm converges slowly or oscillates around minimum.
+        
+    \item \textbf{Failure to Converge}:  Algorithm fails to converge altogether.
+        
+\end{itemize}
+    \textbf{Mitigation Strategies:}\\
+    - Tune learning rate appropriately.\\
+    - Use learning rate decay or adaptive learning rates (e.g., Adagad optimizer).\\
+    - Employ line search methods to dynamically adjust step size.
+\end{answer_box*}
+\question
+{
+    Block diagram of in p.g67 corresponds to training phase or decision- directed phase?
+}
+\begin{answer_box*}
+\begin{itemize}
+    \item \textbf {Training Phase:}
+    
+    1- The equalizer uses known training symbols to estimate the channel response.\\
+    2- The estimated channel response is used to update the equalizer coefficients.\\
+    3- The training phase is typically used initially to obtain an accurate estimate of the channel.
+    
+    \item \textbf {Decision-Directed Phase:}
+    
+    1- The equalizer uses decisions made on received symbols to update its coefficients.\\
+    2- The decisions are based on the current estimate of the channel response.\\
+    3- The decision-directed phase is used to track and adapt to changes in the channel.   
+\end{itemize}
+
+
+The key difference between the two phases is the source of the information used to update the equalizer coefficients: known training symbols in the training phase and decisions on received symbols in the decision-directed phase.\\
+In practice, the equalizer may start in the training phase to obtain an initial estimate of the channel response. Once the channel has been estimated, the equalizer switches to the decision-directed phase to track and adapt to changes in the channel while making decisions on the received symbols.
+\end{answer_box*}
+\question
+{
+    Search for : Maximum likelihood sequence equalizer?
+}
+\begin{answer_box*}
+    The Maximum Likelihood Sequence Equalizer (MLSE) is a technique used for equalization in communication systems. It aims to mitigate the effects of intersymbol interference (ISI) caused by a dispersive channel. MLSE takes into account the entire received sequence of symbols to make optimal decisions about the transmitted symbols.\\
+    The MLSE equalizer operates based on the principle of maximum likelihood estimation, which means it seeks to find the most likely sequence of transmitted symbols given the received sequence. The equalizer considers all possible transmitted symbol sequences and computes their probabilities based on the received sequence and the estimated channel response.\\
+    Here is a high-level overview of the MLSE process:
+
+\begin{itemize}
+    \item \textbf{Channel Estimation}: MLSE requires an estimation of the channel impulse response. This can be obtained through techniques like pilot symbols, training sequences, or blind estimation algorithms.
+    \item \textbf{State Metric Calculation}: The MLSE equalizer maintains a set of internal states that represent the possible past symbol sequences. The equalizer calculates a metric for each state based on the received signal and the estimated channel response. The metric represents the likelihood of each state given the received signal.
+    \item \textbf{Path Metric Update}: The MLSE equalizer updates the metrics associated with each state using the received signal and the estimated channel response. This update takes into account the likelihood of transitioning between states based on the channel response.
+    \item \textbf{Path Pruning}: To reduce computational complexity, the MLSE equalizer prunes less likely paths by discarding states with lower metrics, keeping only the most likely states. This pruning helps to focus on the more probable symbol sequences.
+    \item \textbf{Decision Making}: After processing the entire received sequence, the MLSE equalizer makes a decision on the transmitted symbols based on the most likely state.    
+\end{itemize}
+    MLSE can be computationally intensive, as it considers all possible symbol sequences. However, it provides near-optimal equalization performance in the presence of severe ISI. Various optimization techniques, such as the Viterbi algorithm, can be employed to efficiently implement the MLSE equalizer.\\
+    Its worth noting that MLSE is often used in scenarios where the channel characteristics are time-varying or unknown and when the transmitted symbols are not constrained to a specific set.
+\end{answer_box*}
+\question
+{
+    Search for : Decision Feedback equalizers?
+}
+\begin{answer_box*}
+    DFE is an equalization technique that mitigates intersymbol interference (ISI) by utilizing both past and future symbols. It consists of two main components: the feedforward filter and the feedback filter.\\
+    The feedforward filter processes the received signal to minimize distortion caused by the direct channel path. The feedback filter uses decisions made on past symbols to estimate and cancel interference from future symbols.\\
+    DFE operates in a feedback loop:
+
+\begin{itemize}
+    \item \textbf{Feedforward Filtering}: The received signal is processed by the feedforward filter.
+    \item \textbf{Decision Making}: A decision is made on the transmitted symbol based on the feedforward filter output.
+    \item \textbf{Feedback Filtering}: The decision on the previous symbol is processed by the feedback filter to cancel interference from future symbols.
+    \item \textbf{Decision Feedback}: The feedback filter output is combined with the previous symbol decision to refine the current symbol decision.
+    \item \textbf{Error Calculation}: The refined decision is compared to the actual received symbol to update the feedforward and feedback filter coefficients.
+\end{itemize}
+    DFE iteratively refines symbol decisions by incorporating information from both past and future symbols. It is effective in scenarios with severe ISI and time-varying or unknown channel characteristics. However, it may introduce noise enhancement, which can be mitigated through proper design and adaptation techniques.
+\end{answer_box*}
 % ========================== end Question of Note 3===============================
 % --------------------------------------------------------------------------------
 
@@ -802,7 +1108,31 @@ Therefore, the modified duobinary signal is preferable in channels that do not p
 \chapter{Introduction to information theory}
 \noindent\makebox[\linewidth]{\rule{\textwidth}{0.4pt}}
 
-
+\question
+{
+}
+\begin{answer_box*}
+\end{answer_box*}
+\question
+{
+}
+\begin{answer_box*}
+\end{answer_box*}
+\question
+{
+}
+\begin{answer_box*}
+\end{answer_box*}
+\question
+{
+}
+\begin{answer_box*}
+\end{answer_box*}
+\question
+{
+}
+\begin{answer_box*}
+\end{answer_box*}
 
 % ==============================================================================
 %
