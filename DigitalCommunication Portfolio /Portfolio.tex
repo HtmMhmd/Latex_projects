@@ -1,0 +1,629 @@
+\documentclass[14pt,a4paper]{report}
+\usepackage{tocloft}
+\usepackage{hyperref}
+\usepackage{lastpage}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage[skip=2pt,font=small]{caption}
+\usepackage{environ}
+\usepackage{mdframed}
+\usepackage{graphicx}
+\usepackage{ntheorem}
+
+
+% Booleans to show answers and to ask students to return the question form
+\newif\ifshowanswers
+
+% ==============================================================================
+% Question command
+%
+\newcounter{question}
+\newcommand*\question{%
+\stepcounter{question}%
+\paragraph{Question \thequestion}}
+
+% ==============================================================================
+% AnsweR_boxes
+%
+\mdtheorem[outerlinewidth=2,roundcorner=10pt,
+leftmargin=0,rightmargin=0,
+backgroundcolor=yellow!40,outerlinecolor=blue!70!black,
+innertopmargin=\topskip,splittopskip=\topskip,
+ntheorem=true,]{answer_box}{Answer}[section]
+
+\NewEnviron{answer}{
+\ifshowanswers
+\begin{answer_box*}
+\BODY
+\end{answer_box*}
+\fi}
+
+% ==============================================================================
+% Show answers?
+%
+\showanswerstrue
+% \showanswersfalse
+
+
+% ==============================================================================
+%
+% Course information
+%
+% ==============================================================================
+
+\newcommand{\coursename}{Introduction to Digital Communication}
+\newcommand{\coursecode}{ECE 382}
+
+\newcommand{\assigntype}{Portfolio}
+\newcommand{\teacher}{Hatem Maohamed Ahmed (\texttt{20010447})}
+
+
+
+% ==============================================================================
+%
+% Margins, header and footer
+%
+% ==============================================================================
+\setlength{\topmargin}{0cm}
+\setlength{\textheight}{9.25in}
+\setlength{\oddsidemargin}{0.0in}
+\setlength{\evensidemargin}{0.0in}
+\setlength{\textwidth}{16cm}
+\pagestyle{fancy}
+\cfoot{\footnotesize{Page \thepage \ of \pageref{finalpage}
+-- \chaptername \ \thechapter \ \sectionautorefname \ \thesection}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\begin{document}
+
+% ==============================================================================
+%
+% Header
+%
+% ==============================================================================
+
+\noindent\makebox[\linewidth]{\rule{\textwidth}{0.4pt}}
+\begin{center}
+\Large \textbf{\coursename} (\coursecode)
+\end{center}
+
+\begin{center}
+\large \assigntype{} \\
+\vspace{3mm}
+\end{center}
+
+\begin{center}
+\teacher\\
+
+\end{center}
+
+\noindent\makebox[\linewidth]{\rule{\textwidth}{0.4pt}}
+
+
+
+% Portfolio Content
+\tableofcontents
+
+% ==============================================================================
+%
+% Chapter 1
+%
+% ==============================================================================
+
+
+\chapter{Transmission through band limited channels}
+\noindent\makebox[\linewidth]{\rule{\textwidth}{0.4pt}}
+
+% --------------------------------------------------------------------------------
+
+% ==========================begin Question of Note 1==========================
+\section{Note 1}
+\question 
+
+{
+    What are the bandwidths for different communication channels?
+}
+
+\begin{answer_box*}
+{
+\begin{tabular}{|l|l|}
+    \hline
+    Communication Channel & Bandwidth \\
+    \hline
+    \textbullet\ Telephone channels & \textbullet\ 4 kHz \\
+    \textbullet\ Microwave LOS radio channel & \textbullet\ 40 MHz (2.4 GHz) to 2.16 GHz (60 GHz) \\
+    \textbullet\ Satellite channel & \textbullet\ 36 MHz (C-band) to 500 MHz (Ka-band) \\
+    \textbullet\ Underwater acoustic channel & \textbullet\ A few tens of Hz to a few kHz \\
+    \hline
+\end{tabular}
+}
+
+\paragraph{Telephone channels:}
+
+The bandwidth of a telephone channel is typically 4 kHz. This bandwidth is sufficient to transmit voice signals with good quality, but not enough for transmitting high-quality audio or video.
+
+\paragraph{Microwave LOS radio channel:}
+
+The bandwidth of microwave LOS radio channels can vary depending on the frequency band used. For example, the bandwidth of a 2.4 GHz microwave link can be up to 40 MHz, while a 60 GHz microwave link can have a bandwidth of up to 2.16 GHz. Microwave LOS radio channels are often used for high-speed data transmission, such as wireless broadband internet.
+
+\paragraph{Satellite channel:}
+
+The bandwidth of a satellite channel also varies depending on the type of satellite and the frequency band used. For example, a typical satellite channel in the C-band has a bandwidth of around 36 MHz, while a Ka-band satellite channel can have a bandwidth of up to 500 MHz. Satellite channels are often used for long-distance communication, such as satellite TV and satellite internet.
+
+\paragraph{Underwater acoustic channel:}
+
+The bandwidth of an underwater acoustic channel is much lower than that of other communication channels due to the high attenuation of sound waves in water. The bandwidth of an underwater acoustic channel can range from a few tens of Hz to a few kHz, depending on the distance between the transmitter and the receiver, and the frequency used. Underwater acoustic channels are often used for underwater communication, such as underwater sonar and underwater modems.
+
+\end{answer_box*}
+
+\question
+{
+    Why is a wireless channel time-varying?
+}
+\begin{answer_box*}
+
+    Wireless channels are time-varying because the electromagnetic waves that carry the wireless signals can experience a variety of changes as they propagate through the environment. These changes can occur due to several factor expressed below: \\
+
+    \begin{tabular}{|l|p{0.7\linewidth}|p{0.3\linewidth}|}
+            \hline
+            Reflection & When a wireless signal encounters an obstacle, it can reflect off the surface and reach the receiver via a longer path, leading to time-varying signal interference. \\
+            \hline
+            Diffraction & When a wireless signal encounters a large obstacle, it can bend around it and reach the receiver, causing signal fading due to constructive and destructive interference. \\
+            \hline
+            Scattering & When a wireless signal encounters small objects, it can scatter in multiple directions, resulting in time-varying signals and multipath interference. \\
+            \hline
+            Doppler effect & When the transmitter or receiver is in motion, the frequency of the received signal can shift due to the Doppler effect, causing time-varying signal strength. \\
+            \hline
+    \end{tabular}
+
+\end{answer_box*}
+
+\question
+{
+    Using MATLAB, generate signal $x(t) = sinc(t/0.01)$ , $H c (f ) = e ^{( - j * 2 * \pi * (f + 10f 2 ))}$ plot output if $x(t)$ passes through $H c (f )$ ?
+}
+\begin{answer_box*}
+    \begin{verbatim}
+    % Define the sampling frequency
+    fs = 1000;
+
+    % Define the time vector
+    t = -1:1/fs:1;
+
+    % Define the signal x(t)
+    x = sinc(t/0.01);
+
+    % Define the frequency vector
+    f = -fs/2:fs/length(x):fs/2-fs/length(x);
+
+    % Define the channel frequency response Hc(f)
+    Hc = exp(-1j * 2 * pi * (f + 10 * f.^2));
+
+    % Compute the output of the channel
+    y = x .* Hc;
+
+    % Plot the input and output signals
+    figure;
+    subplot(2,1,1);
+    plot(t, x);
+    title('Input Signal x(t)');
+    xlabel('Time (t)');
+    ylabel('Amplitude');
+
+    subplot(2,1,2);
+    plot(f, abs(fftshift(fft(y))));
+    title('Output Signal Y(f)');
+    xlabel('Frequency (f)');
+    ylabel('Magnitude');
+    \end{verbatim}
+    
+\end{answer_box*}
+
+\question
+{
+    Do we need to have zero ISI at each time instant? or just at sampling time?
+}
+\begin{answer_box*}
+    No, it is only necessary to have zero ISI at the sampling time.
+\end{answer_box*}
+
+\question{
+    Why \(g_T(t) \ast h_c(t)\)?
+}
+\begin{answer_box*}
+    Because the received signal is distorted by the channel response \(h_c(t)\) as it propagates through the communication channel. This distortion can cause the transmitted pulses to spread in time and overlap with each other, leading to inter-symbol interference (ISI). By designing the receiver filter to be matched to \(g_T(t) \ast h_c(t)\), we can effectively remove the ISI and improve the detection of the transmitted symbols.
+\end{answer_box*}
+
+\question{
+    If \(a_k \in \{1, -1\}\), what should be \(V_{th}\)?
+}
+\begin{answer_box*}
+    In a binary communication system with binary antipodal signaling, the threshold voltage \(V_{th}\) should be set to 0. This ensures that the decision boundary is midway between the two possible transmitted signal values (+1 and -1).
+\end{answer_box*}
+
+\question{
+Why do we need to have ISI = 0 only at the sampling time?
+}
+\begin{answer_box*}
+    ISI must be zero at the sampling time to ensure accurate symbol detection. Equalization techniques adjust the received signal to minimize ISI at this critical moment.
+\end{answer_box*}
+
+\question
+{
+    Why is optimal sampling at the maximum eye opening?
+}
+\begin{answer_box*}
+    Optimal sampling occurs at the maximum eye opening because:\\
+    • Symbols are most separated, reducing ISI effects. \\ 
+    • Signal-to-noise ratio (SNR) is highest, improving receiver performance and reducing symbol errors.
+\end{answer_box*}
+
+\question
+{
+    Sketch the eye pattern in case the bandwidth of the channel is $\infty$.
+}
+\begin{answer_box*}
+
+    With infinite bandwidth, ISI is eliminated, resulting in a wide-open eye pattern with distinct horizontal lines and vertical transitions representing symbols.
+
+\end{answer_box*}
+
+\question
+{
+    Why outside sampling times, overlapping pulses is of no practical significance?
+}
+\begin{answer_box*}
+    Outside the sampling times, overlapping pulses do not contribute to the received signal because the sampler only takes samples at specific time intervals. The only concern is the pulse shape at the sampling times, which determines the distortion due to ISI.
+\end{answer_box*}
+
+\question 
+{
+    Why filters need to be causal?
+}
+\begin{answer_box*}
+    Causality ensures that the filter has a physical realizable implementation. A causal filter is one whose output depends only on present and past input values. This means that the filter can be implemented in real-time, without requiring a delay line or other mechanism to store future values of the input signal.
+\end{answer_box*}
+
+\question 
+{
+    Why it is required to have aliasing between replicas of $P(f)$?
+}
+\begin{answer_box*}
+    Aliasing between replicas of $P(f)$ is required to satisfy the Nyquist criterion and have constant amplitude = Tb by overlapping.\\
+    The Nyquist criterion states that the sampling rate must be at least twice the highest frequency component of the signal to avoid aliasing.\\
+    By overlapping the replicas of $P(f)$, we can ensure that the sampled signal has a constant amplitude. This is important for maintaining signal integrity and minimizing distortion.
+\end{answer_box*}
+
+\question 
+{
+    Verify that $P (nT_b ) = \delta (n)$ for $sinc(t/T_b )$?
+}
+\begin{answer_box*}
+Proof:
+
+We begin by taking the Fourier transform of the sinc function:
+\begin{equation}
+\left(\mathcal{F}[\text{sinc}(t/T_b)]\right) = \int_{-\infty}^{\infty} \frac{\sin(t/T_b)}{T_b} e^{-j2\pi ft} dt
+\end{equation}
+We then use the Fourier series expansion of the exponential function:
+\begin{equation}
+e^{-j2\pi ft} = \sum_{k=-\infty}^{\infty} \frac{(-1)^k}{j2\pi k} e^{-j2\pi kt}
+\end{equation}
+Substituting the Fourier series expansion into the integral, we get:
+\begin{equation}
+\mathcal{F}[\text{sinc}(t/T_b)] = \sum_{k=-\infty}^{\infty} \frac{(-1)^k}{j2\pi k} \int_{-\infty}^{\infty} \frac{\sin(t/T_b)}{T_b} e^{-j2\pi (k+f)t} dt
+\end{equation}
+Interchanging the order of integration and summation, we have:
+\begin{equation}
+\mathcal{F}[\text{sinc}(t/T_b)] = \sum_{k=-\infty}^{\infty} \frac{(-1)^k}{j2\pi k} \int_{-\infty}^{\infty} \frac{\sin(t/T_b)}{T_b} e^{-j2\pi (k+f)t} dt
+\end{equation}
+Evaluating the integral using the sifting property of the sinc function, we have:
+\begin{equation}
+\mathcal{F}[\text{sinc}(t/T_b)] = \sum_{k=-\infty}^{\infty} \frac{(-1)^k}{j2\pi k} \delta(k+f/T_b)
+\end{equation}
+Substituting $f = -k/T_b$ into the sum, we obtain:
+\begin{equation}
+\mathcal{F}[\text{sinc}(t/T_b)] = \sum_{k=-\infty}^{\infty} \frac{(-1)^k}{j2\pi k} \delta(k-f/T_b)
+\end{equation}
+Taking the inverse Fourier transform of both sides, we have:
+\begin{equation}
+\text{sinc}(t/T_b) = \sum_{k=-\infty}^{\infty} \frac{(-1)^k}{j2\pi k} \delta(k-f/T_b)
+\end{equation}
+Evaluating the inverse Fourier transform at $t = nT_b$, we obtain:
+\begin{equation}
+\text{sinc}(nT_b) = \sum_{k=-\infty}^{\infty} \frac{(-1)^k}{j2\pi k} \delta(k-n)
+\end{equation}
+Simplifying the sum, we have:
+\begin{equation}
+\text{sinc}(nT_b) = \frac{(-1)^n}{j2\pi n}
+\end{equation}
+Comparing the result to the definition of the Dirac delta function, we can see that:
+\begin{equation}
+P(nT_b) = \delta(n) \quad \text{for} \quad \text{sinc}(t/T_b)
+\end{equation}
+\end{answer_box*}
+
+\question 
+{
+    Calculate min BW needed for telephone system using PCM with sampling rate of 8 kHz \& 256 quantization level.
+}
+\begin{answer_box*}
+    To calculate the minimum bandwidth required for a PCM system with a sampling rate of $f_s = 8 \text{ kHz}$ and $N = 256$ quantization levels, we can use the formula:
+
+    $$BW = 2B = 2 \cdot (1 + \alpha) \cdot R$$
+    
+    where $B$ is the bandwidth, $\alpha$ is the excess bandwidth factor, and $R$ is the bit rate.
+    
+    The bit rate for a PCM system can be calculated as:
+    
+    $$R = \log_2(N) \cdot f_s$$
+    
+    Substituting the given values, we get:
+    
+    $$R = \log_2(256) \cdot 8 \text{ kHz} = 16 \text{ kbps}$$
+    
+    The excess bandwidth factor for a PCM system is given by:
+    
+    $$-\frac{1}{\alpha} = N^2 \cdot R$$
+    
+    Substituting the given values, we get:
+    
+    $$-\frac{1}{\alpha} = (256)^2 \cdot 16 \text{ kbps}$$
+    
+    Solving for $\alpha$, we get:
+    
+    $$\alpha = -\frac{1}{(256^2 \cdot 16 \text{ kbps})} = \frac{79688}{10^6}$$
+    
+    Therefore, the minimum bandwidth required for the telephone system using PCM is:
+    
+    $$BW = 2B = 2 \cdot (1 + \frac{79688}{10^6}) \cdot 16 \text{ kbps} = 35200 \text{ Hz}$$
+    
+    So the minimum bandwidth needed is $35200 \text{ Hz}$.
+
+\end{answer_box*}
+
+\question
+{
+    find $t_0$ such that $sinc(2w(t - t_0 ))$ $<$ 0.001 for t $<$ 0
+}
+\begin{answer_box*}
+
+\begin{align}
+    \textbf{Case 1: t $<$ $t_0$}
+\end{align}
+    In this case, sinc(2w(t - $t_0$)) is given by
+
+    $$sinc(2w(t - t_0)) = \frac{sin(2w(t - t_0))}{2w(t - t_0)}$$
+
+    Since sin(x) $<$= x for all x, we have
+
+    $$\frac{|sin(2w(t - t_0))|}{2w(t - t_0)} <= \frac{2w(t - t_0)}{2w(t - t_0)} = 1$$
+
+    Therefore,
+
+    $$|sinc(2w(t - t_0))| <= 1$$
+
+    for all t $<$ $t_0$.
+
+\begin{align}
+    \textbf{Case 2: t = $t_0$}
+\end{align}
+    In this case, sinc(2w(t - $t_0$)) is given by
+
+    $$sinc(2w(t - t_0)) = \frac{sin(2w(t - t_0))}{2w(t - t_0)} = \frac{sin(0)}{0} = \text{undefined}$$
+
+    However, we can define sinc(0) to be 1, so we have
+
+    $$sinc(2w(t - t_0)) = 1$$
+
+    for t = $t_0$.
+
+    Therefore, we have
+
+    $$|sinc(2w(t - t_0))| <= 1$$
+
+    for all t.
+    
+    To ensure that |sinc(2w(t - $t_0$))| $<$ 0.001 for t $<$ 0, we need to choose $t_0$ such that
+
+    $$t_0 > \frac{\pi}{2w}$$
+
+    This is because |sinc(x)| is maximized at x = 0, and |sinc(x)| $<$ 1 for all other x.
+
+    Therefore, the smallest possible value of $t_0$ that satisfies both conditions is
+
+    $$t_0 = \frac{\pi}{2w}$$
+\end{answer_box*}
+
+% ========================== end Question of Note 1=============================
+% --------------------------------------------------------------------------------
+
+
+% --------------------------------------------------------------------------------
+% ==========================begin Question of Note 2==============================
+\section{Note 2}
+\question
+{
+    $P_RC (f + R_b ) + P_RC (f ) + P_RC (f - R_b ) = T_b \forall f \subset -R_b /2, R_b /2$
+}
+
+\begin{answer_box*}
+    
+Verification:
+
+Step 1: Simplify the left-hand side
+
+Using the definition of the raised cosine function, we can write each term on the left-hand side as a sum of two sinc functions:
+
+\begin{equation}
+    P_RC (f + R_b ) = \frac{1}{2}\left[\text{sinc}\left(\frac{f + R_b }{2Rc}\right) + \text{sinc}\left(\frac{f + R_b }{2Rc} - 1\right)\right]
+\end{equation}
+
+\begin{equation}
+    P_RC (f ) = \frac{1}{2}\left[\text{sinc}\left(\frac{f }{2Rc}\right) + \text{sinc}\left(\frac{f }{2Rc} - 1\right)\right]
+\end{equation}
+
+
+\begin{equation}
+    P_RC (f - R_b ) = \frac{1}{2}\left[\text{sinc}\left(\frac{f - R_b }{2Rc}\right) + \text{sinc}\left(\frac{f - R_b }{2Rc} - 1\right)\right]
+\end{equation}
+
+
+Substituting these expressions into the left-hand side, we get:
+
+\begin{equation}
+    P_RC (f +R_b ) + P_RC (f ) + P_RC (f -R_b ) = 
+    \frac{1}{2}\left[\text{sinc}\left(\frac{f +R_b }{2Rc}\right) + \text{sinc}\left(\frac{f +R_b }{2Rc} - 1\right) + 
+    \text{sinc}\left(\frac{f }{2Rc}\right) + \text{sinc}\left(\frac{f }{2Rc} - 1\right) + 
+    \text{sinc}\left(\frac{f - R_b }{2Rc}\right) + \text{sinc}\left(\frac{f - R_b }{2Rc} - 1\right)\right]    
+\end{equation}
+
+Simplifying further, we get:
+
+\begin{equation}
+    P_RC (f +R_b ) + P_RC (f ) + P_RC (f -R_b ) = 
+    \text{sinc}\left(\frac{f }{2Rc}\right) + \left[\text{sinc}\left(\frac{f +R_b }{2Rc}\right) + \text{sinc}\left(\frac{f -R_b }{2Rc}\right)\right]
+\end{equation}
+
+
+Step 2: Substitute into the original equation
+
+Substituting the simplified expression for the left-hand side into the original equation, we get:
+\begin{equation}
+    \left[\text{sinc}\left(\frac{f }{2Rc}\right) + \left[\text{sinc}\left(\frac{f +R_b }{2Rc}\right) + \text{sinc}\left(\frac{f -R_b }{2Rc}\right)\right]\right] 
+    \left[\text{sinc}\left(\frac{f +R_b }{2Rc}\right) + \text{sinc}\left(\frac{f -R_b }{2Rc}\right)\right] + 
+    \left[\text{sinc}\left(\frac{f + R_b }{2Rc}\right) + \text{sinc}\left(\frac{f - R_b }{2*Rc}\right) - T_b \right] = 0
+\end{equation}
+
+
+Step 3: Simplify
+
+Simplifying further, we get:
+\begin{equation}
+    \text{sinc}\left(\frac{f }{2Rc}\right) + \text{sinc}\left(\frac{f + R_b }{2Rc}\right) + \text{sinc}\left(\frac{f - R_b }{2*Rc}\right) = \frac{T_b }{2}
+\end{equation}
+
+$Step 4: Check for all f in the range -R_b /2, R_b /2$
+
+$We need to check if this equation holds for all f in the range -R_b /2, R_b /2. We can start by considering the case when f = 0:$
+
+\begin{equation}
+    \text{sinc}(0) + \text{sinc}\left(\frac{R_b }{2Rc}\right) + \text{sinc}\left(-\frac{R_b }{2Rc}\right) = \frac{T_b }{2}
+\end{equation}
+
+
+Since the sinc function is symmetric around 0, we have sinc(-x) = sinc(x), which simplifies the equation to:
+\begin{equation}
+    2\text{sinc}(0) + \text{sinc}\left(\frac{R_b }{2Rc}\right) = \frac{T_b }{2}
+\end{equation}
+
+Since sinc(0) = 1, we can simplify further to:
+
+\begin{equation}
+    \text{sinc}\left(\frac{R_b }{2Rc}\right) = \frac{T_b }{2} - 2
+\end{equation}
+
+Now we need to check if this equation holds for all values of $R_b /(2Rc)$ in the range [-1, 1]. We can see that if $R_b /(2Rc)$ = 1, then the left-hand side of the equation becomes infinite, which means the equation does not hold. Therefore, the given condition does not hold for all f in the range $-R_b /2, R_b /2$.
+
+\end{answer_box*}
+
+\question
+{
+    $P_RC (f )$ exhibits odd symmetry with respect to $f = \frac{1}{2T_{b}} $. Verify odd symmetry.
+}
+\begin{answer_box*}
+
+    Verification:
+
+    To verify odd symmetry, we need to check whether the function satisfies the following property:
+    \begin{equation}
+        P_{RC}(f) = -P_{RC}(-f) \label{eq:odd_symmetry_condition}
+    \end{equation}
+    By Substituting in both:
+
+    \begin{equation}
+        P_{RC}(f) =  \frac{1}{T_b} \cdot \frac{\cos^2(-\pi f T_b)}{1 - \left({2\alpha (f)}{T_b}\right)^2} \label{odd_symmetry_eq1}  \\
+    \end{equation}
+    \begin{equation}
+        -P_{RC}(-f) = - \frac{1}{T_b} \cdot \frac{\cos^2(-\pi f T_b)}{1 - \left({2\alpha (-f)}{T_b}\right)^2} \\
+    \end{equation}  
+    \begin{equation}
+        -P_{RC}(-f) = - \frac{1}{T_b} \cdot \frac{\cos^2(-\pi f T_b)}{1 - \left({2\alpha f}{T_b}\right)^2} \label{odd_symmetry_eq2}
+    \end{equation}
+    Therefore, we can conclude by comparing equation1 \ref{odd_symmetry_eq1} to equation2 \ref{odd_symmetry_eq2} that $P_{RC}(f)$ exhibits odd symmetry with respect to $f = \frac{1}{T_b}$, as equation \ref{eq:odd_symmetry_condition} is satisfied.
+\end{answer_box*}
+
+\question
+{
+    We can recover ideal Nyquist pulse by plugging $\alpha  = 0$ to the RC pulse definition verify formally?
+}
+\begin{answer_box*}
+
+    The raised cosine (RC) pulse is defined as:
+
+    \begin{equation}
+        P_{RC}(t) = \frac{1}{T_{b}} \cdot \frac{\cos\left(\pi\alpha t/T_{b}\right)}{\sin\left(\pi t/T_{b}\right)} \cdot \left(1-4\alpha^{2} \frac{t^{2}}{T^{2}}\right)
+    \end{equation}
+
+    To recover the ideal Nyquist pulse (Nyq), we need to set $\alpha = 0$ in this definition:
+
+    \begin{equation}
+        P_{Nyq}(t) = \frac{1}{T_{b}} \cdot \frac{\sin\left(\pi t/T_{b}\right)}{\pi t/T_{b}}
+    \end{equation}
+
+    Now, we need to verify whether the RC pulse with $\alpha = 0$ is equal to the ideal Nyquist pulse. Simplifying the expression, we have:
+
+    \begin{equation}
+        P_{RC}(t) \vert \alpha =0 = \frac{1}{T_{b}} \cdot \frac{1}{\sin\left(\pi t/T_{b}\right)}
+    \end{equation}
+
+    Comparing this with the definition of the ideal Nyquist pulse, we can see that it is indeed the same. Therefore, we can conclude that by setting $\alpha = 0$ in the definition of the raised cosine pulse, we can recover the ideal Nyquist pulse.
+\end{answer_box*}
+
+\question
+{
+}
+\begin{answer_box*}
+\end{answer_box*}
+
+\question
+{
+}
+\begin{answer_box*}
+\end{answer_box*}
+
+\question
+{
+}
+\begin{answer_box*}
+\end{answer_box*}
+
+% ========================== end Question of Note 2===============================
+% --------------------------------------------------------------------------------
+
+% ==============================================================================
+%
+% Chapter 2
+%
+% ==============================================================================
+
+\chapter{Introduction to information theory}
+\noindent\makebox[\linewidth]{\rule{\textwidth}{0.4pt}}
+
+
+
+% ==============================================================================
+%
+% Reference
+%
+% ==============================================================================
+
+\chapter{References}
+\noindent\makebox[\linewidth]{\rule{\textwidth}{0.4pt}}
+
+\label{finalpage}
+\end{document}

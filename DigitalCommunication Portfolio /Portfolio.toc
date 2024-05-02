@@ -1,0 +1,30 @@
+\contentsline {chapter}{\numberline {1}Transmission through band limited channels}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Note 1}{2}{section.1.1}%
+\contentsline {paragraph}{Question 1}{2}{section*.1}%
+\contentsline {paragraph}{Telephone channels:}{2}{section*.2}%
+\contentsline {paragraph}{Microwave LOS radio channel:}{2}{section*.3}%
+\contentsline {paragraph}{Satellite channel:}{2}{section*.4}%
+\contentsline {paragraph}{Underwater acoustic channel:}{2}{section*.5}%
+\contentsline {paragraph}{Question 2}{3}{section*.6}%
+\contentsline {paragraph}{Question 3}{3}{section*.7}%
+\contentsline {paragraph}{Question 4}{4}{section*.8}%
+\contentsline {paragraph}{Question 5}{4}{section*.9}%
+\contentsline {paragraph}{Question 6}{4}{section*.10}%
+\contentsline {paragraph}{Question 7}{4}{section*.11}%
+\contentsline {paragraph}{Question 8}{4}{section*.12}%
+\contentsline {paragraph}{Question 9}{4}{section*.13}%
+\contentsline {paragraph}{Question 10}{4}{section*.14}%
+\contentsline {paragraph}{Question 11}{5}{section*.15}%
+\contentsline {paragraph}{Question 12}{5}{section*.16}%
+\contentsline {paragraph}{Question 13}{5}{section*.17}%
+\contentsline {paragraph}{Question 14}{6}{section*.18}%
+\contentsline {paragraph}{Question 15}{7}{section*.19}%
+\contentsline {section}{\numberline {1.2}Note 2}{8}{section.1.2}%
+\contentsline {paragraph}{Question 16}{8}{section*.20}%
+\contentsline {paragraph}{Question 17}{9}{section*.21}%
+\contentsline {paragraph}{Question 18}{9}{section*.22}%
+\contentsline {paragraph}{Question 19}{10}{section*.23}%
+\contentsline {paragraph}{Question 20}{10}{section*.24}%
+\contentsline {paragraph}{Question 21}{10}{section*.25}%
+\contentsline {chapter}{\numberline {2}Introduction to information theory}{11}{chapter.2}%
+\contentsline {chapter}{\numberline {3}References}{12}{chapter.3}%
